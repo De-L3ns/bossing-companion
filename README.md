@@ -60,25 +60,40 @@ per-kill history. Boss/item icons load through RuneLite's native sprite services
 
 ## Collection-log progress and drop rates
 
-The **Collection log** tab shows **Total kills**, native unique-item icons, and
-obtained quantities separately from the session. Browse bosses when no session
-is active; an active session selects its boss. Items remain unknown until the
+Drop rates are bundled as public JSON for all 41 supported bosses. The plugin
+loads the resource once on a worker and makes no background Wiki requests.
+The local maintenance updater is `scripts/update-boss-data.ps1`; `/scripts/`
+is Git-ignored. It supports initial population and later refreshes; ordinary
+builds and client startup never run it. Reviewed data ships with plugin updates.
+
+After a session starts manually or automatically, its boss icon and
+**Drop Information** appear in the same sidebar. Expand the section to see **Total kills**, native
+unique-item icons, obtained quantities and drop details. The section starts
+collapsed and keeps its expansion state as session data refreshes. Information
+is tied to that session's boss; the pre-start picker does not browse drops.
+The ended summary retains its boss information until a new session or reset.
+After End, **New session** sits just below the boss header. Its picker defaults
+to that boss; choose **Start new session** to replace the summary, or Cancel
+to keep it.
+Items remain unknown until the
 game supplies evidence. Open your own collection log and visit a boss page to
 confirm its missing items and any displayed kill count. Invoking the game's
 **Search** can supply positive item quantities across pages; unreceived items
 stay unknown. Another player's adventure log is excluded. Shared items are
 account unlocks and do not imply a drop from this particular boss.
 
-Enable **Wiki drop rates** in RuneLite's plugin configuration to fetch public
-drop tables. It is disabled by default. Requests contain public boss/item
-definitions only; player names, kills and collection progress are never sent.
-Local progress remains available with this option disabled or while offline.
-Public rates are cached in memory for six hours. Requests are asynchronous,
-bounded and canceled when obsolete, disabled or shut down.
+Drop information works offline and needs no network opt-in. The former
+**Wiki drop rates** option has been retired; any saved `wikiDropRates` boolean
+is inert, and the config key/group has not been renamed or reused. Other saved
+settings are preserved. Missing/corrupt bundled data stays unavailable, without
+an HTTP fallback or network Retry. Character progress remains local and in memory.
 
 Select a unique for rarity, the exact source fraction, roll count, conditions,
 special mechanics and a Wiki link. Conditional or hidden mechanics are marked;
-unknown rates never become zero odds. Standard rates are unavailable on modified
+related rewards retain their source units: per chest opening, Unsired or dossier.
+Shared Nightmare entries label Phosani's source explicitly. Clicking the Wiki
+link opens the source page only at your request.
+Unknown rates never become zero odds. Standard rates are unavailable on modified
 worlds. This iteration displays rates only; it does not calculate luck or infer
 historical drop timing. Collection data resets on logout, character changes,
 plugin disable and restart. Moving between standard and modified worlds also
@@ -86,7 +101,7 @@ clears character progress and sessions. There is no progress persistence.
 
 Abyssal Sire's uniques include rewards from offering an **Unsired**. Those rates
 are labeled **per Unsired**, with alternative/context notes, separately from the
-boss's Unsired drop rate. Empty Wiki matches show unavailable and allow Retry.
+boss's Unsired drop rate. Missing source matches stay unavailable.
 
 ## Live fight timer
 
@@ -95,12 +110,14 @@ It defaults off. This first iteration supports **Obor, Bryophyta and post-quest
 Vorkath** on standard worlds; other bosses keep their existing session/progress
 features but do not start the timer.
 
-The movable native overlay shows only the boss and time. It starts at your first
+The movable native overlay is a single compact row with a small boss icon and
+clock (about 98×26 pixels for a typical observed time). It starts at your first
 qualifying owned hit, including a blocked hit. Target selection, NPC spawn and
 manual session pre-start do not start it. `~` marks observed timing, which may
 start later than the game's official encounter clock. Normal movement or losing
 your target does not pause it. Use RuneLite's configured overlay drag hotkey to
-reposition it; hover for timing provenance.
+reposition it. Hover identifies the boss and distinguishes an initial zero,
+running estimate, frozen estimate and game-reported time.
 
 Final death/end evidence freezes provisionally; a matching credited KC confirms
 the result and a uniquely matched **Fight duration** can supply the official

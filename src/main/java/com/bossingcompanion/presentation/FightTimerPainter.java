@@ -13,32 +13,39 @@ import net.runelite.client.ui.FontManager;
 /** Native compact widget. No state caption; raw geometry is shared by the actual overlay and render tests. */
 public final class FightTimerPainter
 {
+	private static final Font CLOCK_FONT = FontManager.getRunescapeBoldFont().deriveFont(18f);
+	private static final int ICON_SIZE = 16;
+	private static final int PAD_X = 5;
+	private static final int PAD_Y = 3;
 	private FightTimerPainter() { }
 	public static Dimension paint(Graphics2D target, FightTimerSnapshot snapshot, long nowNanos, BufferedImage icon)
 	{
 		Graphics2D graphics = (Graphics2D) target.create();
 		try
 		{
-			Font titleFont = FontManager.getRunescapeFont();
-			Font clockFont = FontManager.getRunescapeBoldFont().deriveFont(22f);
-			String name = snapshot.getBoss() == null ? "" : snapshot.getBoss().getDisplayName();
 			String clock = (snapshot.isApproximate() ? "~" : "") + FightTimerSnapshot.format(snapshot.elapsedAt(nowNanos));
-			FontMetrics titleMetrics = graphics.getFontMetrics(titleFont), clockMetrics = graphics.getFontMetrics(clockFont);
-			int iconHeight = name.isEmpty() || icon == null ? 0 : Math.min(20, icon.getHeight());
-			int iconWidth = iconHeight == 0 ? 0 : Math.max(1, icon.getWidth() * iconHeight / icon.getHeight());
-			int titleHeight = name.isEmpty() ? 0 : Math.max(titleMetrics.getHeight(), iconHeight);
-			int width = Math.max(164, Math.max(titleMetrics.stringWidth(name) + iconWidth + (iconWidth == 0 ? 0 : 4), clockMetrics.stringWidth(clock)) + 14);
-			int height = 10 + titleHeight + (titleHeight == 0 ? 0 : 2) + clockMetrics.getHeight();
+			FontMetrics clockMetrics = graphics.getFontMetrics(CLOCK_FONT);
+			boolean hasBoss = snapshot.getBoss() != null;
+			int lineHeight = Math.max(clockMetrics.getHeight(), hasBoss ? ICON_SIZE : 0);
+			int clockX = PAD_X + (hasBoss ? ICON_SIZE + 4 : 0);
+			int width = clockX + clockMetrics.stringWidth(clock) + PAD_X + 1;
+			int height = PAD_Y * 2 + lineHeight + 1;
 			graphics.setColor(ColorScheme.DARKER_GRAY_COLOR); graphics.fillRect(0, 0, width, height);
 			graphics.setColor(ColorScheme.MEDIUM_GRAY_COLOR); graphics.drawRect(0, 0, width - 1, height - 1);
-			if (!name.isEmpty())
+			if (hasBoss)
 			{
-				if (iconWidth > 0) { graphics.drawImage(icon, 7, 5 + (titleHeight - iconHeight) / 2, iconWidth, iconHeight, null); }
-				graphics.setFont(titleFont);
-				text(graphics, name, 7 + (iconWidth == 0 ? 0 : iconWidth + 4), 5 + (titleHeight - titleMetrics.getHeight()) / 2 + titleMetrics.getAscent(), ColorScheme.BRAND_ORANGE);
+				int iconY = PAD_Y + (lineHeight - ICON_SIZE) / 2;
+				if (icon != null)
+				{
+					int largest = Math.max(icon.getWidth(), icon.getHeight());
+					int iconWidth = Math.max(1, icon.getWidth() * ICON_SIZE / largest);
+					int iconHeight = Math.max(1, icon.getHeight() * ICON_SIZE / largest);
+					graphics.drawImage(icon, PAD_X + (ICON_SIZE - iconWidth) / 2, iconY + (ICON_SIZE - iconHeight) / 2, iconWidth, iconHeight, null);
+				}
+				else { graphics.setColor(ColorScheme.MEDIUM_GRAY_COLOR); graphics.drawRect(PAD_X, iconY, ICON_SIZE - 1, ICON_SIZE - 1); }
 			}
-			graphics.setFont(clockFont);
-			text(graphics, clock, 7, 5 + titleHeight + (titleHeight == 0 ? 0 : 2) + clockMetrics.getAscent(), Color.YELLOW);
+			graphics.setFont(CLOCK_FONT);
+			text(graphics, clock, clockX, PAD_Y + (lineHeight - clockMetrics.getHeight()) / 2 + clockMetrics.getAscent(), Color.YELLOW);
 			return new Dimension(width, height);
 		}
 		finally { graphics.dispose(); }
@@ -50,7 +57,10 @@ public final class FightTimerPainter
 	}
 	public static String provenance(FightTimerSnapshot snapshot)
 	{
-		return snapshot.isOfficial() ? "Game-reported completed fight duration."
-			: "Observed elapsed time from your first qualifying boss hit. Values marked ~ may differ from official encounter time.";
+		String boss = snapshot.getBoss() == null ? "Fight timer" : snapshot.getBoss().getDisplayName();
+		if (snapshot.isOfficial()) { return boss + ": game-reported fight time."; }
+		if (!snapshot.isObserved()) { return boss + ": no fight timed yet. Starts on your first detected boss hit."; }
+		return snapshot.isRunning() ? boss + ": elapsed since your first detected hit (~ = estimate)."
+			: boss + ": frozen estimated time (~). May differ from the game's fight time.";
 	}
 }

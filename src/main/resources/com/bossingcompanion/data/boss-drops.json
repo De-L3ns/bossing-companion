@@ -1,0 +1,4177 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "ddfa807ff31f97ccc10a45eed9dfaa2ff247fd838294250342c46eadb2f66b3e",
+  "generatedAt": "2026-10-10T20:23:00.625957900Z",
+  "mode": "cache",
+  "completeCatalogue": true,
+  "source": "OSRS Wiki Bucket API: dropsline and infobox_item; public data only",
+  "bosses": {
+    "ABYSSAL_SIRE": {
+      "displayName": "Abyssal Sire",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "sourcePages": [
+        "Abyssal Sire",
+        "Unsired"
+      ],
+      "drops": [
+        {
+          "page_name": "Abyssal Sire",
+          "page_name_sub": "Abyssal Sire",
+          "item_name": "Unsired",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Abyssal dagger",
+          "drop_json": "{\"Alt Rarity\":\"26/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"26/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Abyssal head",
+          "drop_json": "{\"Alt Rarity\":\"10/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"10/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Abyssal orphan",
+          "drop_json": "{\"Alt Rarity\":\"Never\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"5/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Abyssal whip",
+          "drop_json": "{\"Alt Rarity\":\"12/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"12/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Bludgeon axon",
+          "drop_json": "{\"Alt Rarity\":\"62/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"62/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Bludgeon claw",
+          "drop_json": "{\"Alt Rarity\":\"62/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"62/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Bludgeon spine",
+          "drop_json": "{\"Alt Rarity\":\"62/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"62/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired",
+          "item_name": "Jar of Miasma",
+          "drop_json": "{\"Alt Rarity\":\"13/123\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"13/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Abyssal dagger",
+          "item_id": [
+            13265
+          ],
+          "page_name": "Abyssal dagger",
+          "page_name_sub": "Abyssal dagger#(unp)"
+        },
+        {
+          "item_name": "Abyssal head",
+          "item_id": [
+            7979
+          ],
+          "page_name": "Abyssal head",
+          "page_name_sub": "Abyssal head"
+        },
+        {
+          "item_name": "Abyssal orphan",
+          "item_id": [
+            13262
+          ],
+          "page_name": "Abyssal orphan",
+          "page_name_sub": "Abyssal orphan"
+        },
+        {
+          "item_name": "Abyssal whip",
+          "item_id": [
+            4151
+          ],
+          "page_name": "Abyssal whip",
+          "page_name_sub": "Abyssal whip"
+        },
+        {
+          "item_name": "Bludgeon axon",
+          "item_id": [
+            13276
+          ],
+          "page_name": "Bludgeon axon",
+          "page_name_sub": "Bludgeon axon"
+        },
+        {
+          "item_name": "Bludgeon claw",
+          "item_id": [
+            13275
+          ],
+          "page_name": "Bludgeon claw",
+          "page_name_sub": "Bludgeon claw"
+        },
+        {
+          "item_name": "Bludgeon spine",
+          "item_id": [
+            13274
+          ],
+          "page_name": "Bludgeon spine",
+          "page_name_sub": "Bludgeon spine"
+        },
+        {
+          "item_name": "Jar of Miasma",
+          "item_id": [
+            13277
+          ],
+          "page_name": "Jar of Miasma",
+          "page_name_sub": "Jar of Miasma"
+        },
+        {
+          "item_name": "Unsired",
+          "item_id": [
+            13273
+          ],
+          "page_name": "Unsired",
+          "page_name_sub": "Unsired"
+        }
+      ]
+    },
+    "ALCHEMICAL_HYDRA": {
+      "displayName": "Alchemical Hydra",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Alchemical_Hydra",
+      "sourcePages": [
+        "Alchemical Hydra"
+      ],
+      "drops": [
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Alchemical hydra heads",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Dragon knife",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"500–1000\",\"Name Notes\":\"\",\"Rarity\":\"1/2,001\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Dragon thrownaxe",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"500–1000\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Hydra leather",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/514\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Hydra tail",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/513\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Hydra's claw",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,001\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Hydra's eye",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/181.1\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Hydra's fang",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/181.1\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Hydra's heart",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/181.1\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Ikkle Hydra",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Alchemical Hydra",
+          "page_name_sub": "Alchemical Hydra",
+          "item_name": "Jar of Chemicals",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Alchemical hydra heads",
+          "item_id": [
+            23077
+          ],
+          "page_name": "Alchemical hydra heads",
+          "page_name_sub": "Alchemical hydra heads"
+        },
+        {
+          "item_name": "Dragon knife",
+          "item_id": [
+            22804
+          ],
+          "page_name": "Dragon knife",
+          "page_name_sub": "Dragon knife#(unp)"
+        },
+        {
+          "item_name": "Dragon thrownaxe",
+          "item_id": [
+            20849
+          ],
+          "page_name": "Dragon thrownaxe",
+          "page_name_sub": "Dragon thrownaxe"
+        },
+        {
+          "item_name": "Hydra leather",
+          "item_id": [
+            22983
+          ],
+          "page_name": "Hydra leather",
+          "page_name_sub": "Hydra leather"
+        },
+        {
+          "item_name": "Hydra tail",
+          "item_id": [
+            22988
+          ],
+          "page_name": "Hydra tail",
+          "page_name_sub": "Hydra tail"
+        },
+        {
+          "item_name": "Hydra's claw",
+          "item_id": [
+            22966
+          ],
+          "page_name": "Hydra's claw",
+          "page_name_sub": "Hydra's claw"
+        },
+        {
+          "item_name": "Hydra's eye",
+          "item_id": [
+            22973
+          ],
+          "page_name": "Hydra's eye",
+          "page_name_sub": "Hydra's eye"
+        },
+        {
+          "item_name": "Hydra's fang",
+          "item_id": [
+            22971
+          ],
+          "page_name": "Hydra's fang",
+          "page_name_sub": "Hydra's fang"
+        },
+        {
+          "item_name": "Hydra's heart",
+          "item_id": [
+            22969
+          ],
+          "page_name": "Hydra's heart",
+          "page_name_sub": "Hydra's heart"
+        },
+        {
+          "item_name": "Ikkle Hydra",
+          "item_id": [
+            22746
+          ],
+          "page_name": "Ikkle Hydra",
+          "page_name_sub": "Ikkle Hydra#Serpentine"
+        },
+        {
+          "item_name": "Jar of Chemicals",
+          "item_id": [
+            23064
+          ],
+          "page_name": "Jar of Chemicals",
+          "page_name_sub": "Jar of Chemicals"
+        }
+      ]
+    },
+    "AMOXLIATL": {
+      "displayName": "Amoxliatl",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Amoxliatl",
+      "sourcePages": [
+        "Amoxliatl"
+      ],
+      "drops": [
+        {
+          "page_name": "Amoxliatl",
+          "page_name_sub": "Amoxliatl#Post-quest",
+          "item_name": "Frozen tear",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"10–20\",\"Name Notes\":\"\",\"Rarity\":\"1/10\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Amoxliatl",
+          "page_name_sub": "Amoxliatl#Post-quest",
+          "item_name": "Frozen tear",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"2–4\",\"Name Notes\":\"\",\"Rarity\":\"6/10\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Amoxliatl",
+          "page_name_sub": "Amoxliatl#Post-quest",
+          "item_name": "Frozen tear",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"5–10\",\"Name Notes\":\"\",\"Rarity\":\"3/10\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Amoxliatl",
+          "page_name_sub": "Amoxliatl#Post-quest",
+          "item_name": "Glacial temotli",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Amoxliatl",
+          "page_name_sub": "Amoxliatl#Post-quest",
+          "item_name": "Moxi",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Amoxliatl",
+          "page_name_sub": "Amoxliatl#Post-quest",
+          "item_name": "Pendant of Ates#Inert",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/25\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Frozen tear",
+          "item_id": [
+            29895
+          ],
+          "page_name": "Frozen tear",
+          "page_name_sub": "Frozen tear"
+        },
+        {
+          "item_name": "Glacial temotli",
+          "item_id": [
+            29889
+          ],
+          "page_name": "Glacial temotli",
+          "page_name_sub": "Glacial temotli"
+        },
+        {
+          "item_name": "Moxi",
+          "item_id": [
+            30154
+          ],
+          "page_name": "Moxi",
+          "page_name_sub": "Moxi#Item"
+        },
+        {
+          "item_name": "Pendant of Ates (inert)",
+          "item_id": [
+            29892
+          ],
+          "page_name": "Pendant of Ates",
+          "page_name_sub": "Pendant of Ates#Inert"
+        }
+      ]
+    },
+    "ARAXXOR": {
+      "displayName": "Araxxor",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Araxxor",
+      "sourcePages": [
+        "Araxxor"
+      ],
+      "drops": [
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Araxyte fang",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Araxyte head",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/250\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Araxyte venom sac",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":true,\"Drop Quantity\":\"12\",\"Name Notes\":\"\",\"Rarity\":\"2/115\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Araxyte venom sac",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":true,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/16\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Araxyte venom sac",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":true,\"Drop Quantity\":\"6\",\"Name Notes\":\"\",\"Rarity\":\"5/115\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Coagulated venom",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Jar of Venom",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Nid",
+          "drop_json": "{\"Alt Rarity\":\"1/1,500\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Noxious blade",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/200\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Noxious point",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/200\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Noxious pommel",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/200\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Araxxor",
+          "page_name_sub": "Araxxor",
+          "item_name": "Spider cave teleport",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":true,\"Drop Quantity\":\"3\",\"Name Notes\":\"\",\"Rarity\":\"8/115\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Araxyte fang",
+          "item_id": [
+            29799
+          ],
+          "page_name": "Araxyte fang",
+          "page_name_sub": "Araxyte fang"
+        },
+        {
+          "item_name": "Araxyte head",
+          "item_id": [
+            29788
+          ],
+          "page_name": "Araxyte head",
+          "page_name_sub": "Araxyte head"
+        },
+        {
+          "item_name": "Araxyte venom sac",
+          "item_id": [
+            29784
+          ],
+          "page_name": "Araxyte venom sac",
+          "page_name_sub": "Araxyte venom sac"
+        },
+        {
+          "item_name": "Coagulated venom",
+          "item_id": [
+            29781
+          ],
+          "page_name": "Coagulated venom",
+          "page_name_sub": "Coagulated venom"
+        },
+        {
+          "item_name": "Jar of Venom",
+          "item_id": [
+            29786
+          ],
+          "page_name": "Jar of Venom",
+          "page_name_sub": "Jar of Venom"
+        },
+        {
+          "item_name": "Nid",
+          "item_id": [
+            29836
+          ],
+          "page_name": "Nid",
+          "page_name_sub": "Nid#Nid"
+        },
+        {
+          "item_name": "Noxious blade",
+          "item_id": [
+            29792
+          ],
+          "page_name": "Noxious blade",
+          "page_name_sub": "Noxious blade"
+        },
+        {
+          "item_name": "Noxious point",
+          "item_id": [
+            29790
+          ],
+          "page_name": "Noxious point",
+          "page_name_sub": "Noxious point"
+        },
+        {
+          "item_name": "Noxious pommel",
+          "item_id": [
+            29794
+          ],
+          "page_name": "Noxious pommel",
+          "page_name_sub": "Noxious pommel"
+        },
+        {
+          "item_name": "Spider cave teleport",
+          "item_id": [
+            29782
+          ],
+          "page_name": "Spider cave teleport",
+          "page_name_sub": "Spider cave teleport"
+        }
+      ]
+    },
+    "BRUTUS": {
+      "displayName": "Brutus",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Brutus",
+      "sourcePages": [
+        "Brutus"
+      ],
+      "drops": [
+        {
+          "page_name": "Brutus",
+          "page_name_sub": "Brutus",
+          "item_name": "Beef",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"<sub title=\\\"Members-only\\\" style=\\\"cursor:help; margin-left:3px;\\\">(m)</sub>\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Brutus",
+          "page_name_sub": "Brutus",
+          "item_name": "Bottomless milk bucket (empty)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"<sub title=\\\"Members-only\\\" style=\\\"cursor:help; margin-left:3px;\\\">(m)</sub>\",\"Rarity\":\"4/150\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Brutus",
+          "page_name_sub": "Brutus",
+          "item_name": "Cow slippers",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"<sub title=\\\"Members-only\\\" style=\\\"cursor:help; margin-left:3px;\\\">(m)</sub>\",\"Rarity\":\"1/150\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Brutus",
+          "page_name_sub": "Brutus",
+          "item_name": "Mooleta",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"5/150\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Beef",
+          "item_id": [
+            33124
+          ],
+          "page_name": "Beef",
+          "page_name_sub": "Beef"
+        },
+        {
+          "item_name": "Bottomless milk bucket (empty)",
+          "item_id": [
+            33091
+          ],
+          "page_name": "Bottomless milk bucket",
+          "page_name_sub": "Bottomless milk bucket#Empty"
+        },
+        {
+          "item_name": "Cow slippers",
+          "item_id": [
+            33093
+          ],
+          "page_name": "Cow slippers",
+          "page_name_sub": "Cow slippers#1"
+        },
+        {
+          "item_name": "Mooleta",
+          "item_id": [
+            33101
+          ],
+          "page_name": "Mooleta",
+          "page_name_sub": "Mooleta"
+        }
+      ]
+    },
+    "BRYOPHYTA": {
+      "displayName": "Bryophyta",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Bryophyta",
+      "sourcePages": [
+        "Bryophyta",
+        "Chest (Bryophyta's lair)"
+      ],
+      "drops": [
+        {
+          "page_name": "Chest (Bryophyta's lair)",
+          "page_name_sub": "Chest (Bryophyta's lair)#Free-to-play",
+          "item_name": "Bryophyta's essence",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/118\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Chest (Bryophyta's lair)",
+          "page_name_sub": "Chest (Bryophyta's lair)#Members",
+          "item_name": "Bryophyta's essence",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/118\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Bryophyta's essence",
+          "item_id": [
+            22372
+          ],
+          "page_name": "Bryophyta's essence",
+          "page_name_sub": "Bryophyta's essence"
+        }
+      ]
+    },
+    "CERBERUS": {
+      "displayName": "Cerberus",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Cerberus",
+      "sourcePages": [
+        "Cerberus"
+      ],
+      "drops": [
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Eternal crystal",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/520\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Hellpuppy",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Jar of Souls",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Key master teleport",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"7\",\"Name Notes\":\"\",\"Rarity\":\"2/130\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Pegasian crystal",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/520\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Primordial crystal",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/520\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Cerberus",
+          "page_name_sub": "Cerberus",
+          "item_name": "Smouldering stone",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/520\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Eternal crystal",
+          "item_id": [
+            13227
+          ],
+          "page_name": "Eternal crystal",
+          "page_name_sub": "Eternal crystal"
+        },
+        {
+          "item_name": "Hellpuppy",
+          "item_id": [
+            13247
+          ],
+          "page_name": "Hellpuppy",
+          "page_name_sub": "Hellpuppy"
+        },
+        {
+          "item_name": "Jar of Souls",
+          "item_id": [
+            13245
+          ],
+          "page_name": "Jar of Souls",
+          "page_name_sub": "Jar of Souls"
+        },
+        {
+          "item_name": "Key master teleport",
+          "item_id": [
+            13249
+          ],
+          "page_name": "Key master teleport",
+          "page_name_sub": "Key master teleport"
+        },
+        {
+          "item_name": "Pegasian crystal",
+          "item_id": [
+            13229
+          ],
+          "page_name": "Pegasian crystal",
+          "page_name_sub": "Pegasian crystal"
+        },
+        {
+          "item_name": "Primordial crystal",
+          "item_id": [
+            13231
+          ],
+          "page_name": "Primordial crystal",
+          "page_name_sub": "Primordial crystal"
+        },
+        {
+          "item_name": "Smouldering stone",
+          "item_id": [
+            13233
+          ],
+          "page_name": "Smouldering stone",
+          "page_name_sub": "Smouldering stone"
+        }
+      ]
+    },
+    "CHAOS_ELEMENTAL": {
+      "displayName": "Chaos Elemental",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
+      "sourcePages": [
+        "Chaos Elemental"
+      ],
+      "drops": [
+        {
+          "page_name": "Chaos Elemental",
+          "page_name_sub": "Chaos Elemental",
+          "item_name": "Dragon 2h sword",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"2/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Chaos Elemental",
+          "page_name_sub": "Chaos Elemental",
+          "item_name": "Dragon pickaxe",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Chaos Elemental",
+          "page_name_sub": "Chaos Elemental",
+          "item_name": "Pet chaos elemental",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/300\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Dragon 2h sword",
+          "item_id": [
+            7158
+          ],
+          "page_name": "Dragon 2h sword",
+          "page_name_sub": "Dragon 2h sword"
+        },
+        {
+          "item_name": "Dragon pickaxe",
+          "item_id": [
+            11920
+          ],
+          "page_name": "Dragon pickaxe",
+          "page_name_sub": "Dragon pickaxe"
+        },
+        {
+          "item_name": "Pet chaos elemental",
+          "item_id": [
+            11995
+          ],
+          "page_name": "Pet chaos elemental",
+          "page_name_sub": "Pet chaos elemental"
+        }
+      ]
+    },
+    "CHAOS_FANATIC": {
+      "displayName": "Chaos Fanatic",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+      "sourcePages": [
+        "Chaos Fanatic"
+      ],
+      "drops": [
+        {
+          "page_name": "Chaos Fanatic",
+          "page_name_sub": "Chaos Fanatic",
+          "item_name": "Malediction shard 1",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Chaos Fanatic",
+          "page_name_sub": "Chaos Fanatic",
+          "item_name": "Odium shard 1",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Chaos Fanatic",
+          "page_name_sub": "Chaos Fanatic",
+          "item_name": "Pet chaos elemental",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Malediction shard 1",
+          "item_id": [
+            11931
+          ],
+          "page_name": "Malediction shard 1",
+          "page_name_sub": "Malediction shard 1"
+        },
+        {
+          "item_name": "Odium shard 1",
+          "item_id": [
+            11928
+          ],
+          "page_name": "Odium shard 1",
+          "page_name_sub": "Odium shard 1"
+        },
+        {
+          "item_name": "Pet chaos elemental",
+          "item_id": [
+            11995
+          ],
+          "page_name": "Pet chaos elemental",
+          "page_name_sub": "Pet chaos elemental"
+        }
+      ]
+    },
+    "COMMANDER_ZILYANA": {
+      "displayName": "Commander Zilyana",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+      "sourcePages": [
+        "Commander Zilyana"
+      ],
+      "drops": [
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Armadyl crossbow",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/508\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Godsword shard 1",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Godsword shard 2",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Godsword shard 3",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Pet Zilyana",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Saradomin hilt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/508\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Saradomin sword",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/127\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Commander Zilyana",
+          "page_name_sub": "Commander Zilyana",
+          "item_name": "Saradomin's light",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/254\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Armadyl crossbow",
+          "item_id": [
+            11785
+          ],
+          "page_name": "Armadyl crossbow",
+          "page_name_sub": "Armadyl crossbow"
+        },
+        {
+          "item_name": "Godsword shard 1",
+          "item_id": [
+            11818
+          ],
+          "page_name": "Godsword shard 1",
+          "page_name_sub": "Godsword shard 1"
+        },
+        {
+          "item_name": "Godsword shard 2",
+          "item_id": [
+            11820
+          ],
+          "page_name": "Godsword shard 2",
+          "page_name_sub": "Godsword shard 2"
+        },
+        {
+          "item_name": "Godsword shard 3",
+          "item_id": [
+            11822
+          ],
+          "page_name": "Godsword shard 3",
+          "page_name_sub": "Godsword shard 3"
+        },
+        {
+          "item_name": "Pet Zilyana",
+          "item_id": [
+            12651
+          ],
+          "page_name": "Pet Zilyana",
+          "page_name_sub": "Pet Zilyana"
+        },
+        {
+          "item_name": "Saradomin hilt",
+          "item_id": [
+            11814
+          ],
+          "page_name": "Saradomin hilt",
+          "page_name_sub": "Saradomin hilt"
+        },
+        {
+          "item_name": "Saradomin sword",
+          "item_id": [
+            11838
+          ],
+          "page_name": "Saradomin sword",
+          "page_name_sub": "Saradomin sword"
+        },
+        {
+          "item_name": "Saradomin's light",
+          "item_id": [
+            13256
+          ],
+          "page_name": "Saradomin's light",
+          "page_name_sub": "Saradomin's light"
+        }
+      ]
+    },
+    "CORPOREAL_BEAST": {
+      "displayName": "Corporeal Beast",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
+      "sourcePages": [
+        "Corporeal Beast"
+      ],
+      "drops": [
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Arcane sigil",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,365\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Elysian sigil",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/4,095\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Holy elixir",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"3/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Jar of Spirits",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Pet dark core",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Spectral sigil",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,365\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Corporeal Beast",
+          "page_name_sub": "Corporeal Beast",
+          "item_name": "Spirit shield",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"8/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Arcane sigil",
+          "item_id": [
+            12827
+          ],
+          "page_name": "Arcane sigil",
+          "page_name_sub": "Arcane sigil"
+        },
+        {
+          "item_name": "Elysian sigil",
+          "item_id": [
+            12819
+          ],
+          "page_name": "Elysian sigil",
+          "page_name_sub": "Elysian sigil"
+        },
+        {
+          "item_name": "Holy elixir",
+          "item_id": [
+            12833
+          ],
+          "page_name": "Holy elixir",
+          "page_name_sub": "Holy elixir"
+        },
+        {
+          "item_name": "Jar of Spirits",
+          "item_id": [
+            25521
+          ],
+          "page_name": "Jar of Spirits",
+          "page_name_sub": "Jar of Spirits"
+        },
+        {
+          "item_name": "Pet dark core",
+          "item_id": [
+            12816
+          ],
+          "page_name": "Pet dark core",
+          "page_name_sub": "Pet dark core#Dark core"
+        },
+        {
+          "item_name": "Spectral sigil",
+          "item_id": [
+            12823
+          ],
+          "page_name": "Spectral sigil",
+          "page_name_sub": "Spectral sigil"
+        },
+        {
+          "item_name": "Spirit shield",
+          "item_id": [
+            12829
+          ],
+          "page_name": "Spirit shield",
+          "page_name_sub": "Spirit shield"
+        }
+      ]
+    },
+    "CRAZY_ARCHAEOLOGIST": {
+      "displayName": "Crazy Archaeologist",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Crazy_Archaeologist",
+      "sourcePages": [
+        "Crazy Archaeologist"
+      ],
+      "drops": [
+        {
+          "page_name": "Crazy archaeologist",
+          "page_name_sub": "Crazy archaeologist",
+          "item_name": "Fedora",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Crazy archaeologist",
+          "page_name_sub": "Crazy archaeologist",
+          "item_name": "Malediction shard 2",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Crazy archaeologist",
+          "page_name_sub": "Crazy archaeologist",
+          "item_name": "Odium shard 2",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Fedora",
+          "item_id": [
+            11990
+          ],
+          "page_name": "Fedora",
+          "page_name_sub": "Fedora"
+        },
+        {
+          "item_name": "Malediction shard 2",
+          "item_id": [
+            11932
+          ],
+          "page_name": "Malediction shard 2",
+          "page_name_sub": "Malediction shard 2"
+        },
+        {
+          "item_name": "Odium shard 2",
+          "item_id": [
+            11929
+          ],
+          "page_name": "Odium shard 2",
+          "page_name_sub": "Odium shard 2"
+        }
+      ]
+    },
+    "DERANGED_ARCHAEOLOGIST": {
+      "displayName": "Deranged Archaeologist",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Deranged_Archaeologist",
+      "sourcePages": [
+        "Deranged Archaeologist"
+      ],
+      "drops": [
+        {
+          "page_name": "Deranged archaeologist",
+          "page_name_sub": "Deranged archaeologist",
+          "item_name": "Steel ring",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"3/131\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Steel ring",
+          "item_id": [
+            30895
+          ],
+          "page_name": "Steel ring",
+          "page_name_sub": "Steel ring"
+        }
+      ]
+    },
+    "DUKE_SUCELLUS": {
+      "displayName": "Duke Sucellus",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+      "sourcePages": [
+        "Duke Sucellus"
+      ],
+      "drops": [
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Awakener's orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/48.5\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Baron",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Chromium ingot",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"3/720\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Eye of the Duke",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/720\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Frozen tablet",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/25.8\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Ice quartz",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/206.6\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Magus vestige",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/720\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Virtus mask",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,160\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Virtus robe bottom",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,160\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Duke Sucellus",
+          "page_name_sub": "Duke Sucellus",
+          "item_name": "Virtus robe top",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,160\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Awakener's orb",
+          "item_id": [
+            28334
+          ],
+          "page_name": "Awakener's orb",
+          "page_name_sub": "Awakener's orb"
+        },
+        {
+          "item_name": "Baron",
+          "item_id": [
+            28250
+          ],
+          "page_name": "Baron",
+          "page_name_sub": "Baron"
+        },
+        {
+          "item_name": "Chromium ingot",
+          "item_id": [
+            28276
+          ],
+          "page_name": "Chromium ingot",
+          "page_name_sub": "Chromium ingot"
+        },
+        {
+          "item_name": "Eye of the Duke",
+          "item_id": [
+            28321
+          ],
+          "page_name": "Eye of the Duke",
+          "page_name_sub": "Eye of the Duke"
+        },
+        {
+          "item_name": "Frozen tablet",
+          "item_id": [
+            28333
+          ],
+          "page_name": "Frozen tablet",
+          "page_name_sub": "Frozen tablet"
+        },
+        {
+          "item_name": "Ice quartz",
+          "item_id": [
+            28270
+          ],
+          "page_name": "Ice quartz",
+          "page_name_sub": "Ice quartz"
+        },
+        {
+          "item_name": "Magus vestige",
+          "item_id": [
+            28281
+          ],
+          "page_name": "Magus vestige",
+          "page_name_sub": "Magus vestige"
+        },
+        {
+          "item_name": "Virtus mask",
+          "item_id": [
+            26241
+          ],
+          "page_name": "Virtus mask",
+          "page_name_sub": "Virtus mask"
+        },
+        {
+          "item_name": "Virtus robe bottom",
+          "item_id": [
+            26245
+          ],
+          "page_name": "Virtus robe bottom",
+          "page_name_sub": "Virtus robe bottom"
+        },
+        {
+          "item_name": "Virtus robe top",
+          "item_id": [
+            26243
+          ],
+          "page_name": "Virtus robe top",
+          "page_name_sub": "Virtus robe top"
+        }
+      ]
+    },
+    "GENERAL_GRAARDOR": {
+      "displayName": "General Graardor",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/General_Graardor",
+      "sourcePages": [
+        "General Graardor"
+      ],
+      "drops": [
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Bandos boots",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/381\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Bandos chestplate",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/381\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Bandos hilt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/508\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Bandos tassets",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/381\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Godsword shard 1",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Godsword shard 2",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Godsword shard 3",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "General Graardor",
+          "page_name_sub": "General Graardor",
+          "item_name": "Pet General Graardor",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Bandos boots",
+          "item_id": [
+            11836
+          ],
+          "page_name": "Bandos boots",
+          "page_name_sub": "Bandos boots"
+        },
+        {
+          "item_name": "Bandos chestplate",
+          "item_id": [
+            11832
+          ],
+          "page_name": "Bandos chestplate",
+          "page_name_sub": "Bandos chestplate"
+        },
+        {
+          "item_name": "Bandos hilt",
+          "item_id": [
+            11812
+          ],
+          "page_name": "Bandos hilt",
+          "page_name_sub": "Bandos hilt"
+        },
+        {
+          "item_name": "Bandos tassets",
+          "item_id": [
+            11834
+          ],
+          "page_name": "Bandos tassets",
+          "page_name_sub": "Bandos tassets"
+        },
+        {
+          "item_name": "Godsword shard 1",
+          "item_id": [
+            11818
+          ],
+          "page_name": "Godsword shard 1",
+          "page_name_sub": "Godsword shard 1"
+        },
+        {
+          "item_name": "Godsword shard 2",
+          "item_id": [
+            11820
+          ],
+          "page_name": "Godsword shard 2",
+          "page_name_sub": "Godsword shard 2"
+        },
+        {
+          "item_name": "Godsword shard 3",
+          "item_id": [
+            11822
+          ],
+          "page_name": "Godsword shard 3",
+          "page_name_sub": "Godsword shard 3"
+        },
+        {
+          "item_name": "Pet General Graardor",
+          "item_id": [
+            12650
+          ],
+          "page_name": "Pet General Graardor",
+          "page_name_sub": "Pet General Graardor"
+        }
+      ]
+    },
+    "GIANT_MOLE": {
+      "displayName": "Giant Mole",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Giant_Mole",
+      "sourcePages": [
+        "Giant Mole"
+      ],
+      "drops": [
+        {
+          "page_name": "Giant Mole",
+          "page_name_sub": "Giant Mole",
+          "item_name": "Baby Mole",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Giant Mole",
+          "page_name_sub": "Giant Mole",
+          "item_name": "Immaculate mole skin",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/50\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Giant Mole",
+          "page_name_sub": "Giant Mole",
+          "item_name": "Mole claw",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Giant Mole",
+          "page_name_sub": "Giant Mole",
+          "item_name": "Mole skin",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1–3\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Baby Mole",
+          "item_id": [
+            12646
+          ],
+          "page_name": "Baby Mole",
+          "page_name_sub": "Baby Mole#Mole"
+        },
+        {
+          "item_name": "Immaculate mole skin",
+          "item_id": [
+            33382
+          ],
+          "page_name": "Immaculate mole skin",
+          "page_name_sub": "Immaculate mole skin"
+        },
+        {
+          "item_name": "Mole claw",
+          "item_id": [
+            7416
+          ],
+          "page_name": "Mole claw",
+          "page_name_sub": "Mole claw"
+        },
+        {
+          "item_name": "Mole skin",
+          "item_id": [
+            7418
+          ],
+          "page_name": "Mole skin",
+          "page_name_sub": "Mole skin"
+        }
+      ]
+    },
+    "HESPORI": {
+      "displayName": "Hespori",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Hespori",
+      "sourcePages": [
+        "Hespori"
+      ],
+      "drops": [
+        {
+          "page_name": "Hespori",
+          "page_name_sub": "Hespori",
+          "item_name": "Attas seed",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1–2\",\"Name Notes\":\"\",\"Rarity\":\"1/3\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Hespori",
+          "page_name_sub": "Hespori",
+          "item_name": "Bottomless compost bucket",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/35\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Hespori",
+          "page_name_sub": "Hespori",
+          "item_name": "Iasor seed",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1–2\",\"Name Notes\":\"\",\"Rarity\":\"1/3\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Hespori",
+          "page_name_sub": "Hespori",
+          "item_name": "Kronos seed",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1–2\",\"Name Notes\":\"\",\"Rarity\":\"1/3\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Attas seed",
+          "item_id": [
+            22881
+          ],
+          "page_name": "Attas seed",
+          "page_name_sub": "Attas seed"
+        },
+        {
+          "item_name": "Bottomless compost bucket",
+          "item_id": [
+            22994
+          ],
+          "page_name": "Bottomless compost bucket",
+          "page_name_sub": "Bottomless compost bucket#Empty"
+        },
+        {
+          "item_name": "Iasor seed",
+          "item_id": [
+            22883
+          ],
+          "page_name": "Iasor seed",
+          "page_name_sub": "Iasor seed"
+        },
+        {
+          "item_name": "Kronos seed",
+          "item_id": [
+            22885
+          ],
+          "page_name": "Kronos seed",
+          "page_name_sub": "Kronos seed"
+        }
+      ]
+    },
+    "HUEYCOATL": {
+      "displayName": "The Hueycoatl",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/The_Hueycoatl",
+      "sourcePages": [
+        "The Hueycoatl",
+        "Hueycoatl"
+      ],
+      "drops": [
+        {
+          "page_name": "The Hueycoatl",
+          "page_name_sub": "The Hueycoatl",
+          "item_name": "Dragon hunter wand",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/105\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Hueycoatl",
+          "page_name_sub": "The Hueycoatl",
+          "item_name": "Huasca seed",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1–20\",\"Name Notes\":\"\",\"Rarity\":\"2/68\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Hueycoatl",
+          "page_name_sub": "The Hueycoatl",
+          "item_name": "Huberte",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/400\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Hueycoatl",
+          "page_name_sub": "The Hueycoatl",
+          "item_name": "Hueycoatl hide",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"3\",\"Name Notes\":\"\",\"Rarity\":\"11/315\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Hueycoatl",
+          "page_name_sub": "The Hueycoatl",
+          "item_name": "Soiled page",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"4–80\",\"Name Notes\":\"\",\"Rarity\":\"5/68\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Hueycoatl",
+          "page_name_sub": "The Hueycoatl",
+          "item_name": "Tome of Earth (empty)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/90\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Dragon hunter wand",
+          "item_id": [
+            30070
+          ],
+          "page_name": "Dragon hunter wand",
+          "page_name_sub": "Dragon hunter wand"
+        },
+        {
+          "item_name": "Huasca seed",
+          "item_id": [
+            30088
+          ],
+          "page_name": "Huasca seed",
+          "page_name_sub": "Huasca seed"
+        },
+        {
+          "item_name": "Huberte",
+          "item_id": [
+            30152
+          ],
+          "page_name": "Huberte",
+          "page_name_sub": "Huberte"
+        },
+        {
+          "item_name": "Hueycoatl hide",
+          "item_id": [
+            30085
+          ],
+          "page_name": "Hueycoatl hide",
+          "page_name_sub": "Hueycoatl hide"
+        },
+        {
+          "item_name": "Soiled page",
+          "item_id": [
+            30068
+          ],
+          "page_name": "Soiled page",
+          "page_name_sub": "Soiled page"
+        },
+        {
+          "item_name": "Tome of Earth (empty)",
+          "item_id": [
+            30066
+          ],
+          "page_name": "Tome of Earth",
+          "page_name_sub": "Tome of Earth#Empty"
+        }
+      ]
+    },
+    "KALPHITE_QUEEN": {
+      "displayName": "Kalphite Queen",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+      "sourcePages": [
+        "Kalphite Queen"
+      ],
+      "drops": [
+        {
+          "page_name": "Kalphite Queen",
+          "page_name_sub": "Kalphite Queen",
+          "item_name": "Dragon 2h sword",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kalphite Queen",
+          "page_name_sub": "Kalphite Queen",
+          "item_name": "Dragon chainbody",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kalphite Queen",
+          "page_name_sub": "Kalphite Queen",
+          "item_name": "Dragon pickaxe",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/400\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kalphite Queen",
+          "page_name_sub": "Kalphite Queen",
+          "item_name": "Jar of Sand",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kalphite Queen",
+          "page_name_sub": "Kalphite Queen",
+          "item_name": "Kalphite Princess",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kalphite Queen",
+          "page_name_sub": "Kalphite Queen",
+          "item_name": "Kq head",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Dragon 2h sword",
+          "item_id": [
+            7158
+          ],
+          "page_name": "Dragon 2h sword",
+          "page_name_sub": "Dragon 2h sword"
+        },
+        {
+          "item_name": "Dragon chainbody",
+          "item_id": [
+            3140
+          ],
+          "page_name": "Dragon chainbody",
+          "page_name_sub": "Dragon chainbody"
+        },
+        {
+          "item_name": "Dragon pickaxe",
+          "item_id": [
+            11920
+          ],
+          "page_name": "Dragon pickaxe",
+          "page_name_sub": "Dragon pickaxe"
+        },
+        {
+          "item_name": "Jar of Sand",
+          "item_id": [
+            12885
+          ],
+          "page_name": "Jar of Sand",
+          "page_name_sub": "Jar of Sand"
+        },
+        {
+          "item_name": "Kalphite Princess",
+          "item_id": [
+            12647
+          ],
+          "page_name": "Kalphite Princess",
+          "page_name_sub": "Kalphite Princess#Walking"
+        },
+        {
+          "item_name": "Kq head",
+          "item_id": [
+            7981
+          ],
+          "page_name": "Kq head",
+          "page_name_sub": "Kq head"
+        }
+      ]
+    },
+    "KING_BLACK_DRAGON": {
+      "displayName": "King Black Dragon",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+      "sourcePages": [
+        "King Black Dragon"
+      ],
+      "drops": [
+        {
+          "page_name": "King Black Dragon",
+          "page_name_sub": "King Black Dragon",
+          "item_name": "Draconic visage",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "King Black Dragon",
+          "page_name_sub": "King Black Dragon",
+          "item_name": "Dragon pickaxe",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "King Black Dragon",
+          "page_name_sub": "King Black Dragon",
+          "item_name": "Kbd heads",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "King Black Dragon",
+          "page_name_sub": "King Black Dragon",
+          "item_name": "Prince Black Dragon",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Draconic visage",
+          "item_id": [
+            11286
+          ],
+          "page_name": "Draconic visage",
+          "page_name_sub": "Draconic visage"
+        },
+        {
+          "item_name": "Dragon pickaxe",
+          "item_id": [
+            11920
+          ],
+          "page_name": "Dragon pickaxe",
+          "page_name_sub": "Dragon pickaxe"
+        },
+        {
+          "item_name": "Kbd heads",
+          "item_id": [
+            7980
+          ],
+          "page_name": "Kbd heads",
+          "page_name_sub": "Kbd heads"
+        },
+        {
+          "item_name": "Prince Black Dragon",
+          "item_id": [
+            12653
+          ],
+          "page_name": "Prince Black Dragon",
+          "page_name_sub": "Prince Black Dragon"
+        }
+      ]
+    },
+    "KRAKEN": {
+      "displayName": "Kraken",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Kraken",
+      "sourcePages": [
+        "Kraken"
+      ],
+      "drops": [
+        {
+          "page_name": "Kraken",
+          "page_name_sub": "Kraken",
+          "item_name": "Jar of Dirt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kraken",
+          "page_name_sub": "Kraken",
+          "item_name": "Kraken tentacle",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/400\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kraken",
+          "page_name_sub": "Kraken",
+          "item_name": "Pet Kraken",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kraken",
+          "page_name_sub": "Kraken",
+          "item_name": "Trident of the Seas (full)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Jar of Dirt",
+          "item_id": [
+            12007
+          ],
+          "page_name": "Jar of Dirt",
+          "page_name_sub": "Jar of Dirt"
+        },
+        {
+          "item_name": "Kraken tentacle",
+          "item_id": [
+            12004
+          ],
+          "page_name": "Kraken tentacle",
+          "page_name_sub": "Kraken tentacle"
+        },
+        {
+          "item_name": "Pet Kraken",
+          "item_id": [
+            12655
+          ],
+          "page_name": "Pet Kraken",
+          "page_name_sub": "Pet Kraken"
+        },
+        {
+          "item_name": "Trident of the Seas (full)",
+          "item_id": [
+            11905
+          ],
+          "page_name": "Trident of the Seas",
+          "page_name_sub": "Trident of the Seas#Charged"
+        }
+      ]
+    },
+    "KREEARRA": {
+      "displayName": "Kree'arra",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Kree'arra",
+      "sourcePages": [
+        "Kree'arra"
+      ],
+      "drops": [
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Armadyl chainskirt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/381\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Armadyl chestplate",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/381\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Armadyl helmet",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/381\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Armadyl hilt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/508\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Godsword shard 1",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Godsword shard 2",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Godsword shard 3",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Kree'arra",
+          "page_name_sub": "Kree'arra",
+          "item_name": "Pet Kree'arra",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Armadyl chainskirt",
+          "item_id": [
+            11830
+          ],
+          "page_name": "Armadyl chainskirt",
+          "page_name_sub": "Armadyl chainskirt"
+        },
+        {
+          "item_name": "Armadyl chestplate",
+          "item_id": [
+            11828
+          ],
+          "page_name": "Armadyl chestplate",
+          "page_name_sub": "Armadyl chestplate"
+        },
+        {
+          "item_name": "Armadyl helmet",
+          "item_id": [
+            11826
+          ],
+          "page_name": "Armadyl helmet",
+          "page_name_sub": "Armadyl helmet"
+        },
+        {
+          "item_name": "Armadyl hilt",
+          "item_id": [
+            11810
+          ],
+          "page_name": "Armadyl hilt",
+          "page_name_sub": "Armadyl hilt"
+        },
+        {
+          "item_name": "Godsword shard 1",
+          "item_id": [
+            11818
+          ],
+          "page_name": "Godsword shard 1",
+          "page_name_sub": "Godsword shard 1"
+        },
+        {
+          "item_name": "Godsword shard 2",
+          "item_id": [
+            11820
+          ],
+          "page_name": "Godsword shard 2",
+          "page_name_sub": "Godsword shard 2"
+        },
+        {
+          "item_name": "Godsword shard 3",
+          "item_id": [
+            11822
+          ],
+          "page_name": "Godsword shard 3",
+          "page_name_sub": "Godsword shard 3"
+        },
+        {
+          "item_name": "Pet Kree'arra",
+          "item_id": [
+            12649
+          ],
+          "page_name": "Pet Kree'arra",
+          "page_name_sub": "Pet Kree'arra"
+        }
+      ]
+    },
+    "KRIL_TSUTSAROTH": {
+      "displayName": "K'ril Tsutsaroth",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/K'ril_Tsutsaroth",
+      "sourcePages": [
+        "K'ril Tsutsaroth"
+      ],
+      "drops": [
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Godsword shard 1",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Godsword shard 2",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Godsword shard 3",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/762\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Pet K'ril Tsutsaroth",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Staff of the Dead",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/508\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Steam battlestaff",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/127\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Zamorak hilt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/508\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "K'ril Tsutsaroth",
+          "page_name_sub": "K'ril Tsutsaroth",
+          "item_name": "Zamorakian spear",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/127\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Godsword shard 1",
+          "item_id": [
+            11818
+          ],
+          "page_name": "Godsword shard 1",
+          "page_name_sub": "Godsword shard 1"
+        },
+        {
+          "item_name": "Godsword shard 2",
+          "item_id": [
+            11820
+          ],
+          "page_name": "Godsword shard 2",
+          "page_name_sub": "Godsword shard 2"
+        },
+        {
+          "item_name": "Godsword shard 3",
+          "item_id": [
+            11822
+          ],
+          "page_name": "Godsword shard 3",
+          "page_name_sub": "Godsword shard 3"
+        },
+        {
+          "item_name": "Pet K'ril Tsutsaroth",
+          "item_id": [
+            12652
+          ],
+          "page_name": "Pet K'ril Tsutsaroth",
+          "page_name_sub": "Pet K'ril Tsutsaroth"
+        },
+        {
+          "item_name": "Staff of the Dead",
+          "item_id": [
+            11791
+          ],
+          "page_name": "Staff of the Dead",
+          "page_name_sub": "Staff of the Dead"
+        },
+        {
+          "item_name": "Steam battlestaff",
+          "item_id": [
+            11787
+          ],
+          "page_name": "Steam battlestaff",
+          "page_name_sub": "Steam battlestaff"
+        },
+        {
+          "item_name": "Zamorak hilt",
+          "item_id": [
+            11816
+          ],
+          "page_name": "Zamorak hilt",
+          "page_name_sub": "Zamorak hilt"
+        },
+        {
+          "item_name": "Zamorakian spear",
+          "item_id": [
+            11824
+          ],
+          "page_name": "Zamorakian spear",
+          "page_name_sub": "Zamorakian spear"
+        }
+      ]
+    },
+    "LEVIATHAN": {
+      "displayName": "The Leviathan",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/The_Leviathan",
+      "sourcePages": [
+        "The Leviathan",
+        "Leviathan"
+      ],
+      "drops": [
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Awakener's orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/53.6\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Chromium ingot",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"3/768\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Leviathan's lure",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/768\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Lil'viathan",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Scarred tablet",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/25.8\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Smoke quartz",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/206\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Venator vestige",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/768\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Virtus mask",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,304\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Virtus robe bottom",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,304\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Leviathan",
+          "page_name_sub": "The Leviathan",
+          "item_name": "Virtus robe top",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,304\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Awakener's orb",
+          "item_id": [
+            28334
+          ],
+          "page_name": "Awakener's orb",
+          "page_name_sub": "Awakener's orb"
+        },
+        {
+          "item_name": "Chromium ingot",
+          "item_id": [
+            28276
+          ],
+          "page_name": "Chromium ingot",
+          "page_name_sub": "Chromium ingot"
+        },
+        {
+          "item_name": "Leviathan's lure",
+          "item_id": [
+            28325
+          ],
+          "page_name": "Leviathan's lure",
+          "page_name_sub": "Leviathan's lure"
+        },
+        {
+          "item_name": "Lil'viathan",
+          "item_id": [
+            28252
+          ],
+          "page_name": "Lil'viathan",
+          "page_name_sub": "Lil'viathan"
+        },
+        {
+          "item_name": "Scarred tablet",
+          "item_id": [
+            28332
+          ],
+          "page_name": "Scarred tablet",
+          "page_name_sub": "Scarred tablet"
+        },
+        {
+          "item_name": "Smoke quartz",
+          "item_id": [
+            28274
+          ],
+          "page_name": "Smoke quartz",
+          "page_name_sub": "Smoke quartz"
+        },
+        {
+          "item_name": "Venator vestige",
+          "item_id": [
+            28283
+          ],
+          "page_name": "Venator vestige",
+          "page_name_sub": "Venator vestige"
+        },
+        {
+          "item_name": "Virtus mask",
+          "item_id": [
+            26241
+          ],
+          "page_name": "Virtus mask",
+          "page_name_sub": "Virtus mask"
+        },
+        {
+          "item_name": "Virtus robe bottom",
+          "item_id": [
+            26245
+          ],
+          "page_name": "Virtus robe bottom",
+          "page_name_sub": "Virtus robe bottom"
+        },
+        {
+          "item_name": "Virtus robe top",
+          "item_id": [
+            26243
+          ],
+          "page_name": "Virtus robe top",
+          "page_name_sub": "Virtus robe top"
+        }
+      ]
+    },
+    "MAD_ANGEL": {
+      "displayName": "The Mad Angel",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/The_Mad_Angel",
+      "sourcePages": [
+        "The Mad Angel",
+        "Mad Angel"
+      ],
+      "drops": [
+        {
+          "page_name": "Mad Angel",
+          "page_name_sub": "Mad Angel",
+          "item_name": "Aggy",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Mad Angel",
+          "page_name_sub": "Mad Angel",
+          "item_name": "Ardeaglais teleport",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"2\",\"Name Notes\":\"\",\"Rarity\":\"1/25\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Mad Angel",
+          "page_name_sub": "Mad Angel",
+          "item_name": "Granite dust",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"25–35\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Mad Angel",
+          "page_name_sub": "Mad Angel",
+          "item_name": "Hallowfell",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/127\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Mad Angel",
+          "page_name_sub": "Mad Angel",
+          "item_name": "Jar of Light",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Aggy",
+          "item_id": [
+            34042
+          ],
+          "page_name": "Aggy",
+          "page_name_sub": "Aggy"
+        },
+        {
+          "item_name": "Ardeaglais teleport",
+          "item_id": [
+            34033
+          ],
+          "page_name": "Ardeaglais teleport",
+          "page_name_sub": "Ardeaglais teleport"
+        },
+        {
+          "item_name": "Granite dust",
+          "item_id": [
+            21726
+          ],
+          "page_name": "Granite dust",
+          "page_name_sub": "Granite dust"
+        },
+        {
+          "item_name": "Hallowfell",
+          "item_id": [
+            34027
+          ],
+          "page_name": "Hallowfell",
+          "page_name_sub": "Hallowfell"
+        },
+        {
+          "item_name": "Jar of Light",
+          "item_id": [
+            34030
+          ],
+          "page_name": "Jar of Light",
+          "page_name_sub": "Jar of Light"
+        }
+      ]
+    },
+    "MAGGOT_KING": {
+      "displayName": "Maggot King",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Maggot_King",
+      "sourcePages": [
+        "Maggot King"
+      ],
+      "drops": [
+        {
+          "page_name": "Maggot King",
+          "page_name_sub": "Maggot King",
+          "item_name": "Crimson kisten",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/520\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Maggot King",
+          "page_name_sub": "Maggot King",
+          "item_name": "Elder venator fang",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/340\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Maggot King",
+          "page_name_sub": "Maggot King",
+          "item_name": "Maggot marquess",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Crimson kisten",
+          "item_id": [
+            33631
+          ],
+          "page_name": "Crimson kisten",
+          "page_name_sub": "Crimson kisten"
+        },
+        {
+          "item_name": "Elder venator fang",
+          "item_id": [
+            33634
+          ],
+          "page_name": "Elder venator fang",
+          "page_name_sub": "Elder venator fang"
+        },
+        {
+          "item_name": "Maggot marquess",
+          "item_id": [
+            33642
+          ],
+          "page_name": "Maggot marquess",
+          "page_name_sub": "Maggot marquess"
+        }
+      ]
+    },
+    "NEX": {
+      "displayName": "Nex",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Nex",
+      "sourcePages": [
+        "Nex"
+      ],
+      "drops": [
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Ancient hilt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/516\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Nexling",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Nihil horn",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/258\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Nihil shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"80–85\",\"Name Notes\":\"\",\"Rarity\":\"5/82\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Nihil shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"85–95\",\"Name Notes\":\"\",\"Rarity\":\"8/209\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Torva full helm (damaged)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/258\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Torva platebody (damaged)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/258\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Torva platelegs (damaged)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/258\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Nex",
+          "page_name_sub": "Nex",
+          "item_name": "Zaryte vambraces",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/172\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Ancient hilt",
+          "item_id": [
+            26370
+          ],
+          "page_name": "Ancient hilt",
+          "page_name_sub": "Ancient hilt"
+        },
+        {
+          "item_name": "Nexling",
+          "item_id": [
+            26348
+          ],
+          "page_name": "Nexling",
+          "page_name_sub": "Nexling"
+        },
+        {
+          "item_name": "Nihil horn",
+          "item_id": [
+            26372
+          ],
+          "page_name": "Nihil horn",
+          "page_name_sub": "Nihil horn"
+        },
+        {
+          "item_name": "Nihil shard",
+          "item_id": [
+            26231
+          ],
+          "page_name": "Nihil shard",
+          "page_name_sub": "Nihil shard"
+        },
+        {
+          "item_name": "Torva full helm (damaged)",
+          "item_id": [
+            26376
+          ],
+          "page_name": "Torva full helm",
+          "page_name_sub": "Torva full helm#Damaged"
+        },
+        {
+          "item_name": "Torva platebody (damaged)",
+          "item_id": [
+            26378
+          ],
+          "page_name": "Torva platebody",
+          "page_name_sub": "Torva platebody#Damaged"
+        },
+        {
+          "item_name": "Torva platelegs (damaged)",
+          "item_id": [
+            26380
+          ],
+          "page_name": "Torva platelegs",
+          "page_name_sub": "Torva platelegs#Damaged"
+        },
+        {
+          "item_name": "Zaryte vambraces",
+          "item_id": [
+            26235
+          ],
+          "page_name": "Zaryte vambraces",
+          "page_name_sub": "Zaryte vambraces"
+        }
+      ]
+    },
+    "NIGHTMARE": {
+      "displayName": "The Nightmare",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/The_Nightmare",
+      "sourcePages": [
+        "The Nightmare",
+        "Nightmare",
+        "Phosani's Nightmare"
+      ],
+      "drops": [
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Eldritch orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Harmonised orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Inquisitor's great helm",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/700\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Inquisitor's hauberk",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/700\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Inquisitor's mace",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"31/35,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Inquisitor's plateskirt",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/700\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Jar of Dreams",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/4,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Little Nightmare",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,400\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Nightmare staff",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"69/35,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Parasitic egg",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/200\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Slepey tablet",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/25\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phosani's Nightmare",
+          "page_name_sub": "Phosani's Nightmare",
+          "item_name": "Volatile orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Eldritch orb",
+          "drop_json": "{\"Alt Rarity\":\"1/548.7\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/960\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Harmonised orb",
+          "drop_json": "{\"Alt Rarity\":\"1/548.7\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/960\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Inquisitor's great helm",
+          "drop_json": "{\"Alt Rarity\":\"1/240.1\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/420\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Inquisitor's hauberk",
+          "drop_json": "{\"Alt Rarity\":\"1/240.1\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/420\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Inquisitor's mace",
+          "drop_json": "{\"Alt Rarity\":\"1/428.7\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/750\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Inquisitor's plateskirt",
+          "drop_json": "{\"Alt Rarity\":\"1/240.1\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/420\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Jar of Dreams",
+          "drop_json": "{\"Alt Rarity\":\"1/2,000\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,900\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Little Nightmare",
+          "drop_json": "{\"Alt Rarity\":\"1/4,000\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/800\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Nightmare staff",
+          "drop_json": "{\"Alt Rarity\":\"1/171.5\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/300\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Nightmare",
+          "page_name_sub": "The Nightmare",
+          "item_name": "Volatile orb",
+          "drop_json": "{\"Alt Rarity\":\"1/548.7\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/960\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Eldritch orb",
+          "item_id": [
+            24517
+          ],
+          "page_name": "Eldritch orb",
+          "page_name_sub": "Eldritch orb"
+        },
+        {
+          "item_name": "Harmonised orb",
+          "item_id": [
+            24511
+          ],
+          "page_name": "Harmonised orb",
+          "page_name_sub": "Harmonised orb"
+        },
+        {
+          "item_name": "Inquisitor's great helm",
+          "item_id": [
+            24419
+          ],
+          "page_name": "Inquisitor's great helm",
+          "page_name_sub": "Inquisitor's great helm"
+        },
+        {
+          "item_name": "Inquisitor's hauberk",
+          "item_id": [
+            24420
+          ],
+          "page_name": "Inquisitor's hauberk",
+          "page_name_sub": "Inquisitor's hauberk"
+        },
+        {
+          "item_name": "Inquisitor's mace",
+          "item_id": [
+            24417
+          ],
+          "page_name": "Inquisitor's mace",
+          "page_name_sub": "Inquisitor's mace"
+        },
+        {
+          "item_name": "Inquisitor's plateskirt",
+          "item_id": [
+            24421
+          ],
+          "page_name": "Inquisitor's plateskirt",
+          "page_name_sub": "Inquisitor's plateskirt"
+        },
+        {
+          "item_name": "Jar of Dreams",
+          "item_id": [
+            24495
+          ],
+          "page_name": "Jar of Dreams",
+          "page_name_sub": "Jar of Dreams"
+        },
+        {
+          "item_name": "Little Nightmare",
+          "item_id": [
+            24491
+          ],
+          "page_name": "Little Nightmare",
+          "page_name_sub": "Little Nightmare#Nightmare"
+        },
+        {
+          "item_name": "Nightmare staff",
+          "item_id": [
+            24422
+          ],
+          "page_name": "Nightmare staff",
+          "page_name_sub": "Nightmare staff"
+        },
+        {
+          "item_name": "Parasitic egg",
+          "item_id": [
+            25838
+          ],
+          "page_name": "Parasitic egg",
+          "page_name_sub": "Parasitic egg"
+        },
+        {
+          "item_name": "Slepey tablet",
+          "item_id": [
+            25837
+          ],
+          "page_name": "Slepey tablet",
+          "page_name_sub": "Slepey tablet"
+        },
+        {
+          "item_name": "Volatile orb",
+          "item_id": [
+            24514
+          ],
+          "page_name": "Volatile orb",
+          "page_name_sub": "Volatile orb"
+        }
+      ]
+    },
+    "OBOR": {
+      "displayName": "Obor",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Obor",
+      "sourcePages": [
+        "Obor",
+        "Chest (Obor's lair)"
+      ],
+      "drops": [
+        {
+          "page_name": "Chest (Obor's lair)",
+          "page_name_sub": "Chest (Obor's lair)",
+          "item_name": "Hill giant club",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/118\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Hill giant club",
+          "item_id": [
+            20756
+          ],
+          "page_name": "Hill giant club",
+          "page_name_sub": "Hill giant club"
+        }
+      ]
+    },
+    "PHANTOM_MUSPAH": {
+      "displayName": "Phantom Muspah",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "sourcePages": [
+        "Phantom Muspah"
+      ],
+      "drops": [
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Ancient essence",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1970–2060\",\"Name Notes\":\"\",\"Rarity\":\"10/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Ancient essence",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"540–599\",\"Name Notes\":\"\",\"Rarity\":\"60/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Ancient essence",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"885–995\",\"Name Notes\":\"\",\"Rarity\":\"23/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Ancient icon",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"2/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Charged ice",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Frozen cache",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"4/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Muphin",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Phantom Muspah",
+          "page_name_sub": "Phantom Muspah",
+          "item_name": "Venator shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Ancient essence",
+          "item_id": [
+            27616
+          ],
+          "page_name": "Ancient essence",
+          "page_name_sub": "Ancient essence"
+        },
+        {
+          "item_name": "Ancient icon",
+          "item_id": [
+            27627
+          ],
+          "page_name": "Ancient icon",
+          "page_name_sub": "Ancient icon"
+        },
+        {
+          "item_name": "Charged ice",
+          "item_id": [
+            27643
+          ],
+          "page_name": "Charged ice",
+          "page_name_sub": "Charged ice"
+        },
+        {
+          "item_name": "Frozen cache",
+          "item_id": [
+            27622
+          ],
+          "page_name": "Frozen cache",
+          "page_name_sub": "Frozen cache"
+        },
+        {
+          "item_name": "Muphin",
+          "item_id": [
+            27590
+          ],
+          "page_name": "Muphin",
+          "page_name_sub": "Muphin#Ranged"
+        },
+        {
+          "item_name": "Venator shard",
+          "item_id": [
+            27614
+          ],
+          "page_name": "Venator shard",
+          "page_name_sub": "Venator shard"
+        }
+      ]
+    },
+    "SARACHNIS": {
+      "displayName": "Sarachnis",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Sarachnis",
+      "sourcePages": [
+        "Sarachnis"
+      ],
+      "drops": [
+        {
+          "page_name": "Sarachnis",
+          "page_name_sub": "Sarachnis",
+          "item_name": "Giant egg sac(full)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/20\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Sarachnis",
+          "page_name_sub": "Sarachnis",
+          "item_name": "Jar of Eyes",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Sarachnis",
+          "page_name_sub": "Sarachnis",
+          "item_name": "Pristine spider silk",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/50\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Sarachnis",
+          "page_name_sub": "Sarachnis",
+          "item_name": "Sarachnis cudgel",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/384\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Sarachnis",
+          "page_name_sub": "Sarachnis",
+          "item_name": "Sraracha",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Giant egg sac(full)",
+          "item_id": [
+            23517
+          ],
+          "page_name": "Giant egg sac",
+          "page_name_sub": "Giant egg sac#Full"
+        },
+        {
+          "item_name": "Jar of Eyes",
+          "item_id": [
+            23525
+          ],
+          "page_name": "Jar of Eyes",
+          "page_name_sub": "Jar of Eyes"
+        },
+        {
+          "item_name": "Pristine spider silk",
+          "item_id": [
+            33133
+          ],
+          "page_name": "Pristine spider silk",
+          "page_name_sub": "Pristine spider silk"
+        },
+        {
+          "item_name": "Sarachnis cudgel",
+          "item_id": [
+            23528
+          ],
+          "page_name": "Sarachnis cudgel",
+          "page_name_sub": "Sarachnis cudgel"
+        },
+        {
+          "item_name": "Sraracha",
+          "item_id": [
+            23495
+          ],
+          "page_name": "Sraracha",
+          "page_name_sub": "Sraracha#Red"
+        }
+      ]
+    },
+    "SCORPIA": {
+      "displayName": "Scorpia",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Scorpia",
+      "sourcePages": [
+        "Scorpia"
+      ],
+      "drops": [
+        {
+          "page_name": "Scorpia",
+          "page_name_sub": "Scorpia",
+          "item_name": "Dragon 2h sword",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Scorpia",
+          "page_name_sub": "Scorpia",
+          "item_name": "Malediction shard 3",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Scorpia",
+          "page_name_sub": "Scorpia",
+          "item_name": "Odium shard 3",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/256\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Scorpia",
+          "page_name_sub": "Scorpia",
+          "item_name": "Scorpia's offspring",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,015.75\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Dragon 2h sword",
+          "item_id": [
+            7158
+          ],
+          "page_name": "Dragon 2h sword",
+          "page_name_sub": "Dragon 2h sword"
+        },
+        {
+          "item_name": "Malediction shard 3",
+          "item_id": [
+            11933
+          ],
+          "page_name": "Malediction shard 3",
+          "page_name_sub": "Malediction shard 3"
+        },
+        {
+          "item_name": "Odium shard 3",
+          "item_id": [
+            11930
+          ],
+          "page_name": "Odium shard 3",
+          "page_name_sub": "Odium shard 3"
+        },
+        {
+          "item_name": "Scorpia's offspring",
+          "item_id": [
+            13181
+          ],
+          "page_name": "Scorpia's offspring",
+          "page_name_sub": "Scorpia's offspring"
+        }
+      ]
+    },
+    "SCURRIUS": {
+      "displayName": "Scurrius",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Scurrius",
+      "sourcePages": [
+        "Scurrius"
+      ],
+      "drops": [
+        {
+          "page_name": "Scurrius",
+          "page_name_sub": "Scurrius#MVP",
+          "item_name": "Scurrius' spine",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/33\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Scurrius",
+          "page_name_sub": "Scurrius#MVP",
+          "item_name": "Scurry",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Scurrius",
+          "page_name_sub": "Scurrius#non-MVP",
+          "item_name": "Scurrius' spine",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/33\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Scurrius' spine",
+          "item_id": [
+            28798
+          ],
+          "page_name": "Scurrius' spine",
+          "page_name_sub": "Scurrius' spine"
+        },
+        {
+          "item_name": "Scurry",
+          "item_id": [
+            28801
+          ],
+          "page_name": "Scurry",
+          "page_name_sub": "Scurry"
+        }
+      ]
+    },
+    "SHELLBANE_GRYPHON": {
+      "displayName": "Shellbane Gryphon",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Shellbane_Gryphon",
+      "sourcePages": [
+        "Shellbane Gryphon"
+      ],
+      "drops": [
+        {
+          "page_name": "Shellbane gryphon",
+          "page_name_sub": "Shellbane gryphon",
+          "item_name": "Belle's folly (tarnished)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/75\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Shellbane gryphon",
+          "page_name_sub": "Shellbane gryphon",
+          "item_name": "Gryphon feather",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"35–50\",\"Name Notes\":\"\",\"Rarity\":\"11/128\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Shellbane gryphon",
+          "page_name_sub": "Shellbane gryphon",
+          "item_name": "Gryphon feather",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"7–10\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Shellbane gryphon",
+          "page_name_sub": "Shellbane gryphon",
+          "item_name": "Gull (pet)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Shellbane gryphon",
+          "page_name_sub": "Shellbane gryphon",
+          "item_name": "Jar of Feathers",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Belle's folly (tarnished)",
+          "item_id": [
+            31245
+          ],
+          "page_name": "Belle's folly (tarnished)",
+          "page_name_sub": "Belle's folly (tarnished)"
+        },
+        {
+          "item_name": "Gryphon feather",
+          "item_id": [
+            31235
+          ],
+          "page_name": "Gryphon feather",
+          "page_name_sub": "Gryphon feather"
+        },
+        {
+          "item_name": "Gull",
+          "item_id": [
+            31285
+          ],
+          "page_name": "Gull (pet)",
+          "page_name_sub": "Gull (pet)#Gull"
+        },
+        {
+          "item_name": "Jar of Feathers",
+          "item_id": [
+            32921
+          ],
+          "page_name": "Jar of Feathers",
+          "page_name_sub": "Jar of Feathers"
+        }
+      ]
+    },
+    "SKOTIZO": {
+      "displayName": "Skotizo",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Skotizo",
+      "sourcePages": [
+        "Skotizo"
+      ],
+      "drops": [
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Ancient shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"75/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Ancient shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"2\",\"Name Notes\":\"\",\"Rarity\":\"15/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Ancient shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"3\",\"Name Notes\":\"\",\"Rarity\":\"5/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Ancient shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"4\",\"Name Notes\":\"\",\"Rarity\":\"4/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Ancient shard",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"5\",\"Name Notes\":\"\",\"Rarity\":\"1/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Dark claw",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/25\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Dark totem",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/128\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Jar of Darkness",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/200\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Skotos",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/65\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Skotizo",
+          "page_name_sub": "Skotizo",
+          "item_name": "Uncut onyx",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Ancient shard",
+          "item_id": [
+            19677
+          ],
+          "page_name": "Ancient shard",
+          "page_name_sub": "Ancient shard"
+        },
+        {
+          "item_name": "Dark claw",
+          "item_id": [
+            21275
+          ],
+          "page_name": "Dark claw",
+          "page_name_sub": "Dark claw"
+        },
+        {
+          "item_name": "Dark totem",
+          "item_id": [
+            19685
+          ],
+          "page_name": "Dark totem",
+          "page_name_sub": "Dark totem"
+        },
+        {
+          "item_name": "Jar of Darkness",
+          "item_id": [
+            19701
+          ],
+          "page_name": "Jar of Darkness",
+          "page_name_sub": "Jar of Darkness"
+        },
+        {
+          "item_name": "Skotos",
+          "item_id": [
+            21273
+          ],
+          "page_name": "Skotos",
+          "page_name_sub": "Skotos"
+        },
+        {
+          "item_name": "Uncut onyx",
+          "item_id": [
+            6571
+          ],
+          "page_name": "Uncut onyx",
+          "page_name_sub": "Uncut onyx"
+        }
+      ]
+    },
+    "THERMONUCLEAR_SMOKE_DEVIL": {
+      "displayName": "Thermonuclear Smoke Devil",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Thermonuclear_Smoke_Devil",
+      "sourcePages": [
+        "Thermonuclear Smoke Devil"
+      ],
+      "drops": [
+        {
+          "page_name": "Thermonuclear smoke devil",
+          "page_name_sub": "Thermonuclear smoke devil",
+          "item_name": "Dragon chainbody",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Thermonuclear smoke devil",
+          "page_name_sub": "Thermonuclear smoke devil",
+          "item_name": "Jar of Smoke",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Thermonuclear smoke devil",
+          "page_name_sub": "Thermonuclear smoke devil",
+          "item_name": "Occult necklace",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/350\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Thermonuclear smoke devil",
+          "page_name_sub": "Thermonuclear smoke devil",
+          "item_name": "Pet Smoke Devil",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Thermonuclear smoke devil",
+          "page_name_sub": "Thermonuclear smoke devil",
+          "item_name": "Smoke battlestaff",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Dragon chainbody",
+          "item_id": [
+            3140
+          ],
+          "page_name": "Dragon chainbody",
+          "page_name_sub": "Dragon chainbody"
+        },
+        {
+          "item_name": "Jar of Smoke",
+          "item_id": [
+            25524
+          ],
+          "page_name": "Jar of Smoke",
+          "page_name_sub": "Jar of Smoke"
+        },
+        {
+          "item_name": "Occult necklace",
+          "item_id": [
+            12002
+          ],
+          "page_name": "Occult necklace",
+          "page_name_sub": "Occult necklace"
+        },
+        {
+          "item_name": "Pet Smoke Devil",
+          "item_id": [
+            12648
+          ],
+          "page_name": "Pet Smoke Devil",
+          "page_name_sub": "Pet Smoke Devil#Thermonuclear"
+        },
+        {
+          "item_name": "Smoke battlestaff",
+          "item_id": [
+            11998
+          ],
+          "page_name": "Smoke battlestaff",
+          "page_name_sub": "Smoke battlestaff"
+        }
+      ]
+    },
+    "VARDORVIS": {
+      "displayName": "Vardorvis",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Vardorvis",
+      "sourcePages": [
+        "Vardorvis"
+      ],
+      "drops": [
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Awakener's orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/80.6\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Blood quartz",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/204\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Butch",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Chromium ingot",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"3/1,088\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Executioner's axe head",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,088\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Strangled tablet",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/25.5\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Ultor vestige",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,088\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Virtus mask",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,264\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Virtus robe bottom",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,264\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vardorvis",
+          "page_name_sub": "Vardorvis",
+          "item_name": "Virtus robe top",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,264\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Awakener's orb",
+          "item_id": [
+            28334
+          ],
+          "page_name": "Awakener's orb",
+          "page_name_sub": "Awakener's orb"
+        },
+        {
+          "item_name": "Blood quartz",
+          "item_id": [
+            28268
+          ],
+          "page_name": "Blood quartz",
+          "page_name_sub": "Blood quartz"
+        },
+        {
+          "item_name": "Butch",
+          "item_id": [
+            28248
+          ],
+          "page_name": "Butch",
+          "page_name_sub": "Butch"
+        },
+        {
+          "item_name": "Chromium ingot",
+          "item_id": [
+            28276
+          ],
+          "page_name": "Chromium ingot",
+          "page_name_sub": "Chromium ingot"
+        },
+        {
+          "item_name": "Executioner's axe head",
+          "item_id": [
+            28319
+          ],
+          "page_name": "Executioner's axe head",
+          "page_name_sub": "Executioner's axe head"
+        },
+        {
+          "item_name": "Strangled tablet",
+          "item_id": [
+            28330
+          ],
+          "page_name": "Strangled tablet",
+          "page_name_sub": "Strangled tablet"
+        },
+        {
+          "item_name": "Ultor vestige",
+          "item_id": [
+            28285
+          ],
+          "page_name": "Ultor vestige",
+          "page_name_sub": "Ultor vestige"
+        },
+        {
+          "item_name": "Virtus mask",
+          "item_id": [
+            26241
+          ],
+          "page_name": "Virtus mask",
+          "page_name_sub": "Virtus mask"
+        },
+        {
+          "item_name": "Virtus robe bottom",
+          "item_id": [
+            26245
+          ],
+          "page_name": "Virtus robe bottom",
+          "page_name_sub": "Virtus robe bottom"
+        },
+        {
+          "item_name": "Virtus robe top",
+          "item_id": [
+            26243
+          ],
+          "page_name": "Virtus robe top",
+          "page_name_sub": "Virtus robe top"
+        }
+      ]
+    },
+    "VORKATH": {
+      "displayName": "Vorkath",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Vorkath",
+      "sourcePages": [
+        "Vorkath"
+      ],
+      "drops": [
+        {
+          "page_name": "Vorkath",
+          "page_name_sub": "Vorkath#Post-quest",
+          "item_name": "Draconic visage",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vorkath",
+          "page_name_sub": "Vorkath#Post-quest",
+          "item_name": "Dragonbone necklace",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vorkath",
+          "page_name_sub": "Vorkath#Post-quest",
+          "item_name": "Jar of Decay",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vorkath",
+          "page_name_sub": "Vorkath#Post-quest",
+          "item_name": "Skeletal visage",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/5,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vorkath",
+          "page_name_sub": "Vorkath#Post-quest",
+          "item_name": "Vorkath's head",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/50\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Vorkath",
+          "page_name_sub": "Vorkath#Post-quest",
+          "item_name": "Vorki",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Draconic visage",
+          "item_id": [
+            11286
+          ],
+          "page_name": "Draconic visage",
+          "page_name_sub": "Draconic visage"
+        },
+        {
+          "item_name": "Dragonbone necklace",
+          "item_id": [
+            22111
+          ],
+          "page_name": "Dragonbone necklace",
+          "page_name_sub": "Dragonbone necklace"
+        },
+        {
+          "item_name": "Jar of Decay",
+          "item_id": [
+            22106
+          ],
+          "page_name": "Jar of Decay",
+          "page_name_sub": "Jar of Decay"
+        },
+        {
+          "item_name": "Skeletal visage",
+          "item_id": [
+            22006
+          ],
+          "page_name": "Skeletal visage",
+          "page_name_sub": "Skeletal visage"
+        },
+        {
+          "item_name": "Vorkath's head",
+          "item_id": [
+            21907
+          ],
+          "page_name": "Vorkath's head",
+          "page_name_sub": "Vorkath's head"
+        },
+        {
+          "item_name": "Vorki",
+          "item_id": [
+            21992
+          ],
+          "page_name": "Vorki",
+          "page_name_sub": "Vorki"
+        }
+      ]
+    },
+    "WHISPERER": {
+      "displayName": "The Whisperer",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/The_Whisperer",
+      "sourcePages": [
+        "The Whisperer",
+        "Whisperer"
+      ],
+      "drops": [
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Awakener's orb",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/34.5\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Bellator vestige",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Chromium ingot",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"3/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Shadow quartz",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/209.3\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Siren's staff",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/512\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Sirenic tablet",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/26.2\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Virtus mask",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,536\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Virtus robe bottom",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,536\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Virtus robe top",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,536\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "The Whisperer",
+          "page_name_sub": "The Whisperer",
+          "item_name": "Wisp",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Awakener's orb",
+          "item_id": [
+            28334
+          ],
+          "page_name": "Awakener's orb",
+          "page_name_sub": "Awakener's orb"
+        },
+        {
+          "item_name": "Bellator vestige",
+          "item_id": [
+            28279
+          ],
+          "page_name": "Bellator vestige",
+          "page_name_sub": "Bellator vestige"
+        },
+        {
+          "item_name": "Chromium ingot",
+          "item_id": [
+            28276
+          ],
+          "page_name": "Chromium ingot",
+          "page_name_sub": "Chromium ingot"
+        },
+        {
+          "item_name": "Shadow quartz",
+          "item_id": [
+            28272
+          ],
+          "page_name": "Shadow quartz",
+          "page_name_sub": "Shadow quartz"
+        },
+        {
+          "item_name": "Siren's staff",
+          "item_id": [
+            28323
+          ],
+          "page_name": "Siren's staff",
+          "page_name_sub": "Siren's staff"
+        },
+        {
+          "item_name": "Sirenic tablet",
+          "item_id": [
+            28331
+          ],
+          "page_name": "Sirenic tablet",
+          "page_name_sub": "Sirenic tablet"
+        },
+        {
+          "item_name": "Virtus mask",
+          "item_id": [
+            26241
+          ],
+          "page_name": "Virtus mask",
+          "page_name_sub": "Virtus mask"
+        },
+        {
+          "item_name": "Virtus robe bottom",
+          "item_id": [
+            26245
+          ],
+          "page_name": "Virtus robe bottom",
+          "page_name_sub": "Virtus robe bottom"
+        },
+        {
+          "item_name": "Virtus robe top",
+          "item_id": [
+            26243
+          ],
+          "page_name": "Virtus robe top",
+          "page_name_sub": "Virtus robe top"
+        },
+        {
+          "item_name": "Wisp",
+          "item_id": [
+            28246
+          ],
+          "page_name": "Wisp",
+          "page_name_sub": "Wisp"
+        }
+      ]
+    },
+    "YAMA": {
+      "displayName": "Yama",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Yama",
+      "sourcePages": [
+        "Yama",
+        "Dossier"
+      ],
+      "drops": [
+        {
+          "page_name": "Dossier",
+          "page_name_sub": "Dossier",
+          "item_name": "Chasm teleport scroll",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"15–18\",\"Name Notes\":\"\",\"Rarity\":\"1/15\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Dossier",
+          "page_name_sub": "Dossier",
+          "item_name": "Rite of vile transference",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/15\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Barrel of demonic tallow (full)",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"5/95.11\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Chasm teleport scroll",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"6\",\"Name Notes\":\"\",\"Rarity\":\"4/95.11\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Dossier",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/12.1\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Forgotten lockbox",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/33\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Oathplate chest",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Oathplate helm",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Oathplate legs",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Oathplate shards",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"12\",\"Name Notes\":\"\",\"Rarity\":\"1/17.07\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Soulflame horn",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"2/600\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama",
+          "item_name": "Yami",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/2,500\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama#Contract",
+          "item_name": "Oathplate chest",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama#Contract",
+          "item_name": "Oathplate helm",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama#Contract",
+          "item_name": "Oathplate legs",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama#Contract",
+          "item_name": "Oathplate shards",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"45\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama#Contract",
+          "item_name": "Soulflame horn",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Yama",
+          "page_name_sub": "Yama#Contract",
+          "item_name": "Yami",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/100\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Barrel of demonic tallow (full)",
+          "item_id": [
+            30795
+          ],
+          "page_name": "Barrel of demonic tallow",
+          "page_name_sub": "Barrel of demonic tallow#Full"
+        },
+        {
+          "item_name": "Chasm teleport scroll",
+          "item_id": [
+            30775
+          ],
+          "page_name": "Chasm teleport scroll",
+          "page_name_sub": "Chasm teleport scroll"
+        },
+        {
+          "item_name": "Dossier",
+          "item_id": [
+            30803
+          ],
+          "page_name": "Dossier",
+          "page_name_sub": "Dossier"
+        },
+        {
+          "item_name": "Forgotten lockbox",
+          "item_id": [
+            30763
+          ],
+          "page_name": "Forgotten lockbox",
+          "page_name_sub": "Forgotten lockbox"
+        },
+        {
+          "item_name": "Oathplate chest",
+          "item_id": [
+            30753
+          ],
+          "page_name": "Oathplate chest",
+          "page_name_sub": "Oathplate chest"
+        },
+        {
+          "item_name": "Oathplate helm",
+          "item_id": [
+            30750
+          ],
+          "page_name": "Oathplate helm",
+          "page_name_sub": "Oathplate helm"
+        },
+        {
+          "item_name": "Oathplate legs",
+          "item_id": [
+            30756
+          ],
+          "page_name": "Oathplate legs",
+          "page_name_sub": "Oathplate legs"
+        },
+        {
+          "item_name": "Oathplate shards",
+          "item_id": [
+            30765
+          ],
+          "page_name": "Oathplate shards",
+          "page_name_sub": "Oathplate shards"
+        },
+        {
+          "item_name": "Rite of vile transference",
+          "item_id": [
+            30806
+          ],
+          "page_name": "Rite of vile transference",
+          "page_name_sub": "Rite of vile transference"
+        },
+        {
+          "item_name": "Soulflame horn",
+          "item_id": [
+            30759
+          ],
+          "page_name": "Soulflame horn",
+          "page_name_sub": "Soulflame horn"
+        },
+        {
+          "item_name": "Yami",
+          "item_id": [
+            30888
+          ],
+          "page_name": "Yami",
+          "page_name_sub": "Yami"
+        }
+      ]
+    },
+    "ZULRAH": {
+      "displayName": "Zulrah",
+      "sourceUrl": "https://oldschool.runescape.wiki/w/Zulrah",
+      "sourcePages": [
+        "Zulrah"
+      ],
+      "drops": [
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Jar of Swamp",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/3,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Magic fang",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,024\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Magma mutagen",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/13,107\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Pet Snakeling",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/4,000\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Serpentine visage",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,024\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Tanzanite fang",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,024\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Tanzanite mutagen",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/13,107\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Uncut onyx",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"1\",\"Name Notes\":\"\",\"Rarity\":\"1/1,024\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Zul-andra teleport",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"4\",\"Name Notes\":\"\",\"Rarity\":\"15/249\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Zulrah's scales",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"100–299\",\"Name Notes\":\"\",\"Rarity\":\"Always\",\"Rarity Notes\":\"\",\"Rolls\":1}"
+        },
+        {
+          "page_name": "Zulrah",
+          "page_name_sub": "Zulrah",
+          "item_name": "Zulrah's scales",
+          "drop_json": "{\"Alt Rarity\":\"\",\"Approx\":false,\"Drop Quantity\":\"500\",\"Name Notes\":\"\",\"Rarity\":\"5/249\",\"Rarity Notes\":\"\",\"Rolls\":2}"
+        }
+      ],
+      "identities": [
+        {
+          "item_name": "Jar of Swamp",
+          "item_id": [
+            12936
+          ],
+          "page_name": "Jar of Swamp",
+          "page_name_sub": "Jar of Swamp"
+        },
+        {
+          "item_name": "Magic fang",
+          "item_id": [
+            12932
+          ],
+          "page_name": "Magic fang",
+          "page_name_sub": "Magic fang"
+        },
+        {
+          "item_name": "Magma mutagen",
+          "item_id": [
+            13201
+          ],
+          "page_name": "Magma mutagen",
+          "page_name_sub": "Magma mutagen"
+        },
+        {
+          "item_name": "Pet Snakeling",
+          "item_id": [
+            12921
+          ],
+          "page_name": "Pet Snakeling",
+          "page_name_sub": "Pet Snakeling#Normal"
+        },
+        {
+          "item_name": "Serpentine visage",
+          "item_id": [
+            12927
+          ],
+          "page_name": "Serpentine visage",
+          "page_name_sub": "Serpentine visage"
+        },
+        {
+          "item_name": "Tanzanite fang",
+          "item_id": [
+            12922
+          ],
+          "page_name": "Tanzanite fang",
+          "page_name_sub": "Tanzanite fang"
+        },
+        {
+          "item_name": "Tanzanite mutagen",
+          "item_id": [
+            13200
+          ],
+          "page_name": "Tanzanite mutagen",
+          "page_name_sub": "Tanzanite mutagen"
+        },
+        {
+          "item_name": "Uncut onyx",
+          "item_id": [
+            6571
+          ],
+          "page_name": "Uncut onyx",
+          "page_name_sub": "Uncut onyx"
+        },
+        {
+          "item_name": "Zul-andra teleport",
+          "item_id": [
+            12938
+          ],
+          "page_name": "Zul-andra teleport",
+          "page_name_sub": "Zul-andra teleport"
+        },
+        {
+          "item_name": "Zulrah's scales",
+          "item_id": [
+            12934
+          ],
+          "page_name": "Zulrah's scales",
+          "page_name_sub": "Zulrah's scales"
+        }
+      ]
+    }
+  }
+}

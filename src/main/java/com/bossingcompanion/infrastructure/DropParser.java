@@ -20,9 +20,9 @@ import java.util.Map;
 import java.util.Set;
 
 /** Pure parsing and stable item-ID join; no client objects or network calls. */
-public final class WikiDropParser
+public final class DropParser
 {
-	private WikiDropParser() { }
+	private DropParser() { }
 	public static DropTable parse(Boss boss, String source, List<CollectionItem> items,
 		JsonArray dropRows, JsonArray identityRows, Instant now)
 	{
@@ -65,7 +65,7 @@ public final class WikiDropParser
 			if (!seen.add(rawKey)) { continue; }
 			DropComponent component = new DropComponent(version, plain(rarity), rolls,
 				plain(text(data, "Drop Quantity")), data.has("Approx") && data.get("Approx").getAsBoolean(),
-				plain(notes(data)), WikiSources.rollUnit(boss, version), plain(text(data, "Alt Rarity")));
+				plain(notes(data)), DropSources.rollUnit(boss, version), plain(text(data, "Alt Rarity")));
 			components.computeIfAbsent(id, k -> new ArrayList<>()).add(component);
 		}
 		Map<Integer, DropEntry> entries = new HashMap<>();
@@ -81,10 +81,12 @@ public final class WikiDropParser
 	}
 	static boolean compatibleVersion(Boss boss, String version)
 	{
-		if (WikiSources.isRelatedReward(boss, version)) { return true; }
+		if (DropSources.isRelatedReward(boss, version)) { return true; }
 		String lower = version.toLowerCase(Locale.ROOT);
 		if (lower.contains("quest") && !lower.contains("post-quest")) { return false; }
-		if (lower.contains("awakened") || lower.contains("hard mode") || lower.contains("demonic") || lower.contains("phosani")) { return false; }
+		if (lower.contains("awakened") || lower.contains("hard mode") || lower.contains("demonic")) { return false; }
+		if (lower.contains("phosani")) { return boss == Boss.NIGHTMARE && DropSources.isRelatedSource(boss, version); }
+		if (DropSources.isRelatedSource(boss, version)) { return true; }
 		String page = version.split("#", 2)[0];
 		return BossCatalog.fromName(page) == boss;
 	}
@@ -96,7 +98,7 @@ public final class WikiDropParser
 	private static String key(String text) { return text.trim().replace('’', '\'').toLowerCase(Locale.ROOT); }
 	private static String plain(String text)
 	{
-		if (text.contains("{{") || text.contains("<ref")) { return "Additional conditions: see the Wiki."; }
+		if (text.contains("{{")) { return "Additional conditions: see the Wiki."; }
 		String result = text.replaceAll("<[^>]*>", "").trim();
 		return result.length() > 500 ? result.substring(0, 500) : result;
 	}

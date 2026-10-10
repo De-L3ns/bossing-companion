@@ -13,3 +13,6 @@ nbproject/
 /.specify/
 /specs/
 /.agents/skills/speckit-*/
+
+# Local boss-data maintenance scripts, source caches and generated candidates
+/scripts/

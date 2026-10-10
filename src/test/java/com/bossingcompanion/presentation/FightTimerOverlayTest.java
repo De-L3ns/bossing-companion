@@ -37,8 +37,8 @@ public class FightTimerOverlayTest
 			assertNull(overlay.render(graphics));
 			overlay.showSnapshot(new FightTimerSnapshot(Boss.VORKATH, true, 0, Duration.ZERO, false), true);
 			SwingUtilities.invokeAndWait(() -> {});
-			Dimension bounds = overlay.render(graphics); assertTrue(bounds.width >= 164); assertTrue(bounds.height <= 65);
-			overlay.onMouseOver(); assertTrue(tooltips.getTooltips().get(0).getText().contains("Observed elapsed"));
+			Dimension bounds = overlay.render(graphics); assertTrue(bounds.width < 164); assertTrue(bounds.height <= 32);
+			overlay.onMouseOver(); assertTrue(tooltips.getTooltips().get(0).getText().contains("elapsed since your first detected hit"));
 			overlay.showSnapshot(new FightTimerSnapshot(Boss.VORKATH, false, 0, Duration.ofMillis(64800), true), false);
 			assertNull(overlay.render(graphics)); overlay.close();
 			overlay.showSnapshot(new FightTimerSnapshot(Boss.VORKATH, false, 0, Duration.ofSeconds(30), true), true);
@@ -62,7 +62,7 @@ public class FightTimerOverlayTest
 			Graphics2D graphics = base.createGraphics(); Dimension bounds;
 			try { bounds = FightTimerPainter.paint(graphics, states[state], Duration.ofMillis(64200).toNanos(), null); }
 			finally { graphics.dispose(); }
-			assertTrue(bounds.width >= 164 && bounds.width <= 240); assertTrue(bounds.height <= 65);
+			assertTrue(bounds.width < 140); assertTrue(bounds.height <= 32);
 			for (int x = 0; x < base.getWidth(); x++)
 			{
 				for (int y = 0; y < base.getHeight(); y++)
@@ -83,8 +83,26 @@ public class FightTimerOverlayTest
 	@Test public void officialVersusObservedIsMetadataAndNeverAStatusCaption()
 	{
 		FightTimerSnapshot exact = new FightTimerSnapshot(Boss.OBOR, false, 0, Duration.ofSeconds(30), true);
-		assertFalse(exact.isApproximate()); assertTrue(FightTimerPainter.provenance(exact).contains("Game-reported"));
+		assertFalse(exact.isApproximate()); assertTrue(FightTimerPainter.provenance(exact).contains("game-reported"));
 		FightTimerSnapshot zero = new FightTimerSnapshot(null, false, 0, Duration.ZERO, false);
 		assertFalse(zero.isApproximate());
+		assertTrue(FightTimerPainter.provenance(zero).contains("no fight timed yet"));
+		assertFalse(FightTimerPainter.provenance(zero).contains("elapsed since"));
+		assertTrue(FightTimerPainter.provenance(new FightTimerSnapshot(Boss.VORKATH, false, 0, Duration.ofSeconds(30), false)).contains("frozen estimated"));
+	}
+	@Test public void iconAspectAndMissingAssetDoNotEnlargeClockFootprint()
+	{
+		BufferedImage canvas = new BufferedImage(240, 100, BufferedImage.TYPE_INT_ARGB);
+		Graphics2D graphics = canvas.createGraphics();
+		try
+		{
+			FightTimerSnapshot value = new FightTimerSnapshot(Boss.VORKATH, false, 0, Duration.ofSeconds(30), false);
+			Dimension missing = FightTimerPainter.paint(graphics, value, 0, null);
+			assertEquals(missing, FightTimerPainter.paint(graphics, value, 0, new BufferedImage(100, 5, BufferedImage.TYPE_INT_ARGB)));
+			assertEquals(missing, FightTimerPainter.paint(graphics, value, 0, new BufferedImage(5, 100, BufferedImage.TYPE_INT_ARGB)));
+			assertEquals(missing, FightTimerPainter.paint(graphics,
+				new FightTimerSnapshot(Boss.THERMONUCLEAR_SMOKE_DEVIL, false, 0, Duration.ofSeconds(30), false), 0, null));
+		}
+		finally { graphics.dispose(); }
 	}
 }

@@ -11,11 +11,11 @@ import net.runelite.api.gameval.ItemID;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class WikiDropParserTest
+public class DropParserTest
 {
 	private static JsonArray fixture(String name)
 	{
-		try (InputStreamReader reader = new InputStreamReader(WikiDropParserTest.class.getResourceAsStream("/wiki/" + name), StandardCharsets.UTF_8))
+		try (InputStreamReader reader = new InputStreamReader(DropParserTest.class.getResourceAsStream("/wiki/" + name), StandardCharsets.UTF_8))
 		{
 			return new JsonParser().parse(reader).getAsJsonObject().getAsJsonArray("bucket");
 		}
@@ -33,7 +33,7 @@ public class WikiDropParserTest
 	}
 	@Test public void recordedWikiIdentitiesJoinPostQuestVorkath()
 	{
-		DropTable table = WikiDropParser.parse(Boss.VORKATH, "Wiki", List.of(new CollectionItem(ItemID.SKELETAL_VISAGE, "Skeletal visage"),
+		DropTable table = DropParser.parse(Boss.VORKATH, "Wiki", List.of(new CollectionItem(ItemID.SKELETAL_VISAGE, "Skeletal visage"),
 			new CollectionItem(ItemID.VORKATHPET, "Vorki")), fixture("vorkath-drops.json"), fixture("item-identities.json"), Instant.EPOCH);
 		assertEquals(2, table.getEntries().size());
 		DropComponent visage = table.getEntries().get(ItemID.SKELETAL_VISAGE).getComponents().get(0);
@@ -44,7 +44,7 @@ public class WikiDropParserTest
 	{
 		CollectionItem fang = new CollectionItem(ItemID.BLOWPIPE_FANG, "Tanzanite fang");
 		CollectionItem scales = new CollectionItem(ItemID.SNAKEBOSS_SCALE, "Zulrah's scales");
-		DropTable table = WikiDropParser.parse(Boss.ZULRAH, "Wiki", List.of(fang, scales), fixture("zulrah-drops.json"), identities(fang, scales), Instant.EPOCH);
+		DropTable table = DropParser.parse(Boss.ZULRAH, "Wiki", List.of(fang, scales), fixture("zulrah-drops.json"), identities(fang, scales), Instant.EPOCH);
 		DropComponent component = table.getEntries().get(fang.getItemId()).getComponents().get(0);
 		assertEquals("1/1,024", component.getRarity()); assertEquals(2, component.getRolls());
 		assertEquals(2, table.getEntries().get(scales.getItemId()).getComponents().size());
@@ -53,14 +53,14 @@ public class WikiDropParserTest
 	@Test public void ambiguousIdsDoNotBecomeInventedMatches()
 	{
 		CollectionItem one = new CollectionItem(1, "Skeletal visage"); CollectionItem two = new CollectionItem(2, "Skeletal visage");
-		assertTrue(WikiDropParser.parse(Boss.VORKATH, "Wiki", List.of(one, two), fixture("vorkath-drops.json"), identities(one, two), Instant.EPOCH).getEntries().isEmpty());
+		assertTrue(DropParser.parse(Boss.VORKATH, "Wiki", List.of(one, two), fixture("vorkath-drops.json"), identities(one, two), Instant.EPOCH).getEntries().isEmpty());
 	}
 	@Test public void variantsAreNotInterchangeable()
 	{
-		assertFalse(WikiDropParser.compatibleVersion(Boss.VORKATH, "Vorkath#Quest"));
-		assertFalse(WikiDropParser.compatibleVersion(Boss.NIGHTMARE, "Phosani's Nightmare"));
-		assertFalse(WikiDropParser.compatibleVersion(Boss.VARDORVIS, "Vardorvis#Awakened"));
-		assertTrue(WikiDropParser.compatibleVersion(Boss.VORKATH, "Vorkath#Post-quest"));
+		assertFalse(DropParser.compatibleVersion(Boss.VORKATH, "Vorkath#Quest"));
+		assertTrue(DropParser.compatibleVersion(Boss.NIGHTMARE, "Phosani's Nightmare"));
+		assertFalse(DropParser.compatibleVersion(Boss.VARDORVIS, "Vardorvis#Awakened"));
+		assertTrue(DropParser.compatibleVersion(Boss.VORKATH, "Vorkath#Post-quest"));
 	}
 	@Test public void rarityDoesNotInventExactOddsFromWords()
 	{
@@ -92,7 +92,7 @@ public class WikiDropParserTest
 		data.addProperty("Rolls", 2); data.addProperty("Rarity Notes", "Requires an unlock."); data.addProperty("Name Notes", "Team contribution applies.");
 		JsonObject row = new JsonObject(); row.addProperty("page_name_sub", "Nex"); row.addProperty("item_name", "Item"); row.addProperty("drop_json", data.toString());
 		JsonArray rows = new JsonArray(); rows.add(row);
-		DropComponent component = WikiDropParser.parse(Boss.NEX, "Wiki", List.of(item), rows, identities(item), Instant.EPOCH)
+		DropComponent component = DropParser.parse(Boss.NEX, "Wiki", List.of(item), rows, identities(item), Instant.EPOCH)
 			.getEntries().get(1).getComponents().get(0);
 		assertTrue(component.isApproximate()); assertEquals(2, component.getRolls());
 		assertEquals("Requires an unlock. Team contribution applies.", component.getConditions());
@@ -103,6 +103,6 @@ public class WikiDropParserTest
 		JsonObject row = new JsonObject(); row.addProperty("page_name_sub", "Vorkath#Post-quest");
 		row.addProperty("item_name", "Item"); row.addProperty("drop_json", "broken JSON");
 		JsonArray rows = new JsonArray(); rows.add(row);
-		WikiDropParser.parse(Boss.VORKATH, "Wiki", List.of(item), rows, identities(item), Instant.EPOCH);
+		DropParser.parse(Boss.VORKATH, "Wiki", List.of(item), rows, identities(item), Instant.EPOCH);
 	}
 }

@@ -2,18 +2,17 @@ package com.bossingcompanion;
 
 import com.bossingcompanion.application.SessionTracker;
 import com.bossingcompanion.application.ProgressTracker;
-import com.bossingcompanion.application.WikiLookup;
+import com.bossingcompanion.application.DropLookup;
 import com.bossingcompanion.application.FightTimerTracker;
 import com.bossingcompanion.domain.FightTimerSnapshot;
 import com.bossingcompanion.infrastructure.NativeFightEvents;
 import com.bossingcompanion.infrastructure.FightSources;
 import com.bossingcompanion.presentation.FightTimerOverlay;
 import com.bossingcompanion.domain.BossProgress;
-import com.bossingcompanion.domain.WikiRates;
+import com.bossingcompanion.domain.DropRates;
 import com.bossingcompanion.infrastructure.NativeCollectionLog;
-import com.bossingcompanion.infrastructure.WikiBucketTransport;
+import com.bossingcompanion.infrastructure.BundledDropData;
 import com.google.gson.Gson;
-import okhttp3.OkHttpClient;
 import com.bossingcompanion.domain.Boss;
 import com.bossingcompanion.domain.SessionSnapshot;
 import com.bossingcompanion.infrastructure.BossCatalog;
@@ -82,7 +81,6 @@ public class BossingCompanionPlugin extends Plugin
 	@Inject private BossingCompanionConfig config;
 	@Inject private ConfigManager configManager;
 	@Inject private Provider<LootManager> coreLoot;
-	@Inject private OkHttpClient http;
 	@Inject private Gson gson;
 	@Inject private OverlayManager overlays;
 	@Inject private TooltipManager tooltips;
@@ -98,8 +96,8 @@ public class BossingCompanionPlugin extends Plugin
 		state.fightOverlay = new FightTimerOverlay(this, new NativeBossIcons(sprites), System::nanoTime, tooltips);
 		overlays.add(state.fightOverlay);
 		state.collection = new NativeCollectionLog(client, items, state.progress);
-		state.transport = new WikiBucketTransport(http, gson, state.clock);
-		state.wiki = new WikiLookup(state.transport, state.clock,
+		state.data = new BundledDropData(gson);
+		state.drops = new DropLookup(state.data,
 			command -> clientThread.invoke(() -> { if (runtime == state) { command.run(); } }), () -> publish(state));
 		state.profileKey = configManager.getRSProfileKey();
 		runtime = state;
@@ -117,12 +115,6 @@ public class BossingCompanionPlugin extends Plugin
 				}), () -> clientThread.invoke(() ->
 				{
 					if (runtime == state) { state.tracker.end(); publish(state); }
-				}), boss -> clientThread.invoke(() ->
-				{
-					if (runtime == state) { state.selected = boss; publish(state); }
-				}), () -> clientThread.invoke(() ->
-				{
-					if (runtime == state) { state.wiki.select(state.selected, state.progress.items(state.selected), true); publish(state); }
 				}));
 			state.button = NavigationButton.builder().tooltip("Bossing Companion").icon(navigationIcon())
 				.priority(7).panel(state.panel).build();
@@ -137,8 +129,8 @@ public class BossingCompanionPlugin extends Plugin
 		runtime = null;
 		if (state == null) { return; }
 		state.fightOverlay.close(); overlays.remove(state.fightOverlay);
-		state.transport.close();
-		clientThread.invoke(() -> { state.wiki.close(); state.tracker.clear(); state.progress.clearCharacter(); state.fightEvents.setEnabled(false); state.fights.clearCharacter(); state.fightEvents.reset(); state.seen.clear(); });
+		state.data.close();
+		clientThread.invoke(() -> { state.drops.close(); state.tracker.clear(); state.progress.clearCharacter(); state.fightEvents.setEnabled(false); state.fights.clearCharacter(); state.fightEvents.reset(); state.seen.clear(); });
 		SwingUtilities.invokeLater(() ->
 		{
 			if (state.panel != null) { state.panel.close(); }
@@ -251,7 +243,7 @@ public class BossingCompanionPlugin extends Plugin
 		if (event.getGameState() == GameState.LOGIN_SCREEN)
 		{
 			state.tracker.clear();
-			state.progress.clearCharacter(); state.collection.reset(); state.wiki.resetSelection();
+			state.progress.clearCharacter(); state.collection.reset(); state.drops.resetSelection();
 			state.fights.clearCharacter(); state.fightEvents.reset();
 			state.seen.clear();
 		}
@@ -274,7 +266,7 @@ public class BossingCompanionPlugin extends Plugin
 				String key = configManager.getRSProfileKey();
 				if (!java.util.Objects.equals(key, state.profileKey))
 				{
-					state.tracker.clear(); state.progress.clearCharacter(); state.collection.reset(); state.wiki.resetSelection();
+					state.tracker.clear(); state.progress.clearCharacter(); state.collection.reset(); state.drops.resetSelection();
 					state.fights.clearCharacter(); state.fightEvents.reset();
 					state.seen.clear(); state.profileKey = key;
 				}
@@ -304,15 +296,14 @@ public class BossingCompanionPlugin extends Plugin
 		boolean eligible = isStandardWorld();
 		if (loggedIn && state.eligible != null && state.eligible != eligible)
 		{
-			state.progress.clearCharacter(); state.tracker.clear(); state.collection.reset(); state.wiki.resetSelection(); snapshot = null;
+			state.progress.clearCharacter(); state.tracker.clear(); state.collection.reset(); state.drops.resetSelection(); snapshot = null;
 			state.fights.clearCharacter(); state.fightEvents.reset();
 		}
 		if (loggedIn) { state.eligible = eligible; }
-		if (snapshot != null && snapshot.isActive()) { state.selected = snapshot.getBoss(); }
-		state.wiki.configure(config.wikiDropRates() && loggedIn, eligible);
-		state.wiki.select(state.selected, state.progress.items(state.selected), false);
-		BossProgress progress = state.progress.snapshot(state.selected);
-		WikiRates rates = state.wiki.snapshot();
+		state.drops.configure(eligible);
+		state.drops.select(snapshot, snapshot == null ? java.util.List.of() : state.progress.items(snapshot.getBoss()));
+		BossProgress progress = snapshot == null ? null : state.progress.snapshot(snapshot.getBoss());
+		DropRates rates = snapshot == null ? null : state.drops.snapshot();
 		state.fightEvents.setEnabled(config.fightTimerEnabled() && loggedIn && eligible);
 		FightTimerSnapshot fight = state.fights.snapshot();
 		if (fight.getBoss() == null && snapshot != null && snapshot.isActive()
@@ -355,9 +346,8 @@ public class BossingCompanionPlugin extends Plugin
 		NativeFightEvents fightEvents;
 		FightTimerOverlay fightOverlay;
 		NativeCollectionLog collection;
-		WikiLookup wiki;
-		WikiBucketTransport transport;
-		Boss selected = Boss.VORKATH;
+		DropLookup drops;
+		BundledDropData data;
 		Boolean eligible;
 		final Deque<Object> seen = new ArrayDeque<>();
 		volatile BossingPanel panel;

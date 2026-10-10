@@ -7,7 +7,7 @@ import com.bossingcompanion.domain.BossProgress;
 import com.bossingcompanion.domain.DropComponent;
 import com.bossingcompanion.domain.DropEntry;
 import com.bossingcompanion.domain.DropMechanic;
-import com.bossingcompanion.domain.WikiRates;
+import com.bossingcompanion.domain.DropRates;
 import com.bossingcompanion.application.BossIcons;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -28,6 +28,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import javax.swing.JToggleButton;
 import javax.swing.plaf.basic.BasicHTML;
 import javax.swing.text.View;
 import net.runelite.client.game.ItemManager;
@@ -47,8 +48,6 @@ public final class BossingPanel extends PluginPanel
 	private final List<Boss> catalogue;
 	private final Consumer<Boss> start;
 	private final Runnable end;
-	private final Consumer<Boss> browse;
-	private final Runnable retry;
 	private final Clock clock;
 	private final JPanel content = vertical();
 	private final Timer timer;
@@ -63,21 +62,19 @@ public final class BossingPanel extends PluginPanel
 	private JLabel elapsed;
 	private JLabel detail;
 	private BossProgress progress;
-	private WikiRates rates;
-	private boolean collectionTab;
+	private DropRates rates;
+	private boolean dropsExpanded;
 	private Integer selectedUnique;
 
-	public BossingPanel(ItemManager items, BossIcons icons, List<Boss> catalogue, Clock clock, Consumer<Boss> start, Runnable end,
-		Consumer<Boss> browse, Runnable retry)
+	public BossingPanel(ItemManager items, BossIcons icons, List<Boss> catalogue, Clock clock, Consumer<Boss> start, Runnable end)
 	{
 		this((id, tile) ->
 		{
 			AsyncBufferedImage image = items.getImage(id);
 			if (image != null) { image.addTo(tile); }
-		}, icons, catalogue, clock, start, end, browse, retry);
+		}, icons, catalogue, clock, start, end);
 	}
-	BossingPanel(BiConsumer<Integer, JButton> itemImages, BossIcons icons, List<Boss> catalogue, Clock clock, Consumer<Boss> start, Runnable end,
-		Consumer<Boss> browse, Runnable retry)
+	BossingPanel(BiConsumer<Integer, JButton> itemImages, BossIcons icons, List<Boss> catalogue, Clock clock, Consumer<Boss> start, Runnable end)
 	{
 		super(false);
 		this.itemImages = itemImages;
@@ -86,29 +83,27 @@ public final class BossingPanel extends PluginPanel
 		this.clock = clock;
 		this.start = start;
 		this.end = end;
-		this.browse = browse; this.retry = retry;
 		setLayout(new BorderLayout());
 		setBackground(ColorScheme.DARK_GRAY_COLOR);
 		setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 		JPanel top = vertical();
 		JLabel title = label("Bossing Companion", ColorScheme.TEXT_COLOR);
+		title.setFont(FontManager.getRunescapeBoldFont().deriveFont(16f));
 		title.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
 		top.add(title);
-		JPanel tabs = new JPanel(new GridLayout(1, 2, 3, 0));
-		tabs.setOpaque(false);
-		tabs.add(button("Session", () -> { collectionTab = false; rebuild(); }));
-		tabs.add(button("Collection log", () -> { collectionTab = true; rebuild(); }));
-		top.add(tabs);
 		top.add(content);
 		add(top, BorderLayout.NORTH);
 		timer = new Timer(1000, e -> refreshElapsed());
 	}
-	public void showProgress(BossProgress progress, WikiRates rates)
+	public void showProgress(BossProgress progress, DropRates rates)
 	{
-		if (closed || Objects.equals(this.progress, progress) && Objects.equals(this.rates, rates)) { return; }
-		if (this.progress == null || this.progress.getBoss() != progress.getBoss()) { selectedUnique = null; }
+		if (closed || snapshot == null || progress != null && progress.getBoss() != snapshot.getBoss()) { return; }
+		if (rates != null && rates.getTable() != null && rates.getTable().getBoss() != snapshot.getBoss())
+		{ rates = new DropRates(DropRates.State.LOADING, null); }
+		if (Objects.equals(this.progress, progress) && Objects.equals(this.rates, rates)) { return; }
+		if (this.progress == null || progress == null || this.progress.getBoss() != progress.getBoss()) { selectedUnique = null; }
 		this.progress = progress; this.rates = rates;
-		if (collectionTab) { rebuild(); }
+		if (dropsExpanded) { rebuild(); }
 	}
 
 	public void showSnapshot(SessionSnapshot snapshot, boolean loggedIn, boolean automatic)
@@ -118,7 +113,8 @@ public final class BossingPanel extends PluginPanel
 		initialized = true;
 		if (snapshot != null && snapshot.isActive()) { picking = false; }
 		if (this.snapshot == null || snapshot == null || this.snapshot.getBoss() != snapshot.getBoss()
-			|| !this.snapshot.getStartedAt().equals(snapshot.getStartedAt())) { selectedItem = null; }
+			|| !this.snapshot.getStartedAt().equals(snapshot.getStartedAt()))
+		{ selectedItem = null; selectedUnique = null; dropsExpanded = false; progress = null; rates = null; }
 		this.snapshot = snapshot;
 		this.loggedIn = loggedIn;
 		this.automatic = automatic;
@@ -129,10 +125,6 @@ public final class BossingPanel extends PluginPanel
 	{
 		content.removeAll();
 		elapsed = null;
-		if (collectionTab)
-		{
-			addCollection(); content.revalidate(); content.repaint(); return;
-		}
 		if (snapshot == null)
 		{
 			content.add(label(loggedIn ? "No active session." : "Log in to start a session.", ColorScheme.LIGHT_GRAY_COLOR));
@@ -144,6 +136,7 @@ public final class BossingPanel extends PluginPanel
 			header.setOpaque(false);
 			String name = snapshot.getBoss().getDisplayName();
 			JLabel bossName = wrapped(name, Color.YELLOW, 120);
+			bossName.setFont(FontManager.getRunescapeBoldFont().deriveFont(14f));
 			bossName.setToolTipText(snapshot.getBoss().getDisplayName());
 			header.add(bossName, BorderLayout.CENTER);
 			Boss boss = snapshot.getBoss();
@@ -161,6 +154,7 @@ public final class BossingPanel extends PluginPanel
 			}
 			content.add(header);
 			content.add(label(!snapshot.isActive() ? "Ended" : snapshot.getKills() == 0 ? "Ready · first kill pending" : "Recording", ColorScheme.LIGHT_GRAY_COLOR));
+			if (!snapshot.isActive()) { addStartControls(); }
 			JPanel primary = new JPanel(new BorderLayout());
 			primary.setOpaque(false);
 			primary.setBorder(BorderFactory.createEmptyBorder(8, 0, 6, 0));
@@ -174,28 +168,32 @@ public final class BossingPanel extends PluginPanel
 			content.add(row("Kills timed", snapshot.getTimedKills() + " / " + snapshot.getKills()));
 			addLoot();
 		}
-		if (snapshot == null || !snapshot.isActive()) { addStartControls(); }
+		if (snapshot == null) { addStartControls(); }
+		if (snapshot != null) { addDropInformation(); }
 		content.revalidate();
 		content.repaint();
 	}
+	private void addDropInformation()
+	{
+		JToggleButton drops = new JToggleButton((dropsExpanded ? "▾ " : "▸ ") + "Drop Information", dropsExpanded);
+		drops.setFont(FontManager.getRunescapeFont());
+		drops.setBackground(ColorScheme.DARKER_GRAY_COLOR);
+		drops.setContentAreaFilled(false);
+		drops.setOpaque(true);
+		drops.setForeground(ColorScheme.TEXT_COLOR);
+		drops.setMargin(new Insets(3, 5, 3, 5));
+		drops.setHorizontalAlignment(JToggleButton.LEFT);
+		drops.getAccessibleContext().setAccessibleName("Drop Information");
+		drops.getAccessibleContext().setAccessibleDescription(dropsExpanded ? "Expanded" : "Collapsed");
+		drops.addActionListener(e -> { dropsExpanded = drops.isSelected(); rebuild(); });
+		content.add(drops);
+		if (dropsExpanded) { addCollection(); }
+	}
 	private void addCollection()
 	{
-		if (progress == null) { content.add(label("Loading collection definitions…", ColorScheme.LIGHT_GRAY_COLOR)); return; }
-		Boss boss = progress.getBoss();
-		JLabel header = wrapped(boss.getDisplayName(), Color.YELLOW, 145);
-		header.setBorder(BorderFactory.createEmptyBorder(8, 0, 6, 0));
-		icons.load(boss, image ->
-		{
-			if (!closed && progress != null && progress.getBoss() == boss && image != null) { header.setIcon(new ImageIcon(image)); }
-		});
-		content.add(header);
-		if (snapshot == null || !snapshot.isActive())
-		{
-			JComboBox<Boss> chooser = new JComboBox<>(catalogue.toArray(new Boss[0]));
-			chooser.setSelectedItem(boss); chooser.setFont(FontManager.getRunescapeFont());
-			chooser.addActionListener(e -> browse.accept((Boss) chooser.getSelectedItem()));
-			content.add(chooser);
-		}
+		if (snapshot == null) { return; }
+		if (progress == null || progress.getBoss() != snapshot.getBoss())
+		{ content.add(label("Loading collection definitions…", ColorScheme.LIGHT_GRAY_COLOR)); return; }
 		content.add(row("Total kills", progress.getTotalKills() == null ? "—" : number(progress.getTotalKills())));
 		if (!loggedIn) { content.add(label("Log in to observe your collection log.", ColorScheme.LIGHT_GRAY_COLOR)); }
 		else if (progress.getSlots().isEmpty()) { content.add(label("Collection definitions unavailable.", ColorScheme.LIGHT_GRAY_COLOR)); }
@@ -224,11 +222,10 @@ public final class BossingPanel extends PluginPanel
 		{
 			switch (rates.getState())
 			{
-				case DISABLED: content.add(label("Wiki rates disabled in configuration.", ColorScheme.LIGHT_GRAY_COLOR)); break;
 				case NEED_ITEMS: content.add(label("Waiting for collection definitions.", ColorScheme.LIGHT_GRAY_COLOR)); break;
-				case LOADING: content.add(label("Loading Wiki rates…", ColorScheme.LIGHT_GRAY_COLOR)); break;
+				case LOADING: content.add(label("Loading drop data…", ColorScheme.LIGHT_GRAY_COLOR)); break;
 				case UNAVAILABLE:
-					content.add(label("Wiki rates unavailable.", ColorScheme.LIGHT_GRAY_COLOR)); content.add(button("Retry", retry)); break;
+					content.add(label("Drop data unavailable.", ColorScheme.LIGHT_GRAY_COLOR)); break;
 				case UNSUPPORTED_WORLD: content.add(label("Standard rates unavailable on this world.", ColorScheme.LIGHT_GRAY_COLOR)); break;
 				default: break;
 			}
@@ -241,13 +238,14 @@ public final class BossingPanel extends PluginPanel
 				DropEntry entry = rates == null || rates.getTable() == null ? null : rates.getTable().getEntries().get(selectedUnique);
 				if (entry == null)
 				{
-					if (rates != null && rates.getState() == WikiRates.State.READY) { content.add(label("Drop rate not available.", ColorScheme.LIGHT_GRAY_COLOR)); }
+					if (rates != null && rates.getState() == DropRates.State.READY) { content.add(label("Drop rate not available.", ColorScheme.LIGHT_GRAY_COLOR)); }
 					return;
 				}
 				boolean conditional = entry.getMechanics().stream().anyMatch(m -> m.getKind() == DropMechanic.Kind.CONDITIONAL || m.getKind() == DropMechanic.Kind.UNMODELED || m.getKind() == DropMechanic.Kind.AVERAGE_ONLY);
 				for (DropComponent component : entry.getComponents())
 				{
-					if (entry.getComponents().stream().map(DropComponent::getSourceVersion).distinct().count() > 1)
+					if (entry.getComponents().stream().map(DropComponent::getSourceVersion).distinct().count() > 1
+						|| !component.getSourceVersion().split("#", 2)[0].equalsIgnoreCase(progress.getBoss().getDisplayName()))
 					{
 						content.add(wrapped(component.getSourceVersion()));
 					}
@@ -321,7 +319,11 @@ public final class BossingPanel extends PluginPanel
 	{
 		if (!picking)
 		{
-			JButton newSession = button("New session", () -> { picking = true; rebuild(); });
+			JButton newSession = button("New session", () ->
+			{
+				if (snapshot != null) { selection = snapshot.getBoss(); }
+				picking = true; rebuild();
+			});
 			newSession.setEnabled(loggedIn);
 			JPanel commands = new JPanel(new BorderLayout());
 			commands.setOpaque(false);
@@ -334,15 +336,15 @@ public final class BossingPanel extends PluginPanel
 		chooser.setSelectedItem(selection);
 		chooser.setFont(FontManager.getRunescapeFont());
 		chooser.addActionListener(e -> selection = (Boss) chooser.getSelectedItem());
-		content.add(label("Session boss", ColorScheme.LIGHT_GRAY_COLOR));
+		content.add(label(snapshot == null ? "Session boss" : "Next session boss", ColorScheme.LIGHT_GRAY_COLOR));
 		content.add(chooser);
-		JPanel actions = new JPanel(new GridLayout(1, 2, 4, 0));
+		JPanel actions = new JPanel(new BorderLayout(4, 0));
 		actions.setOpaque(false);
 		actions.setBorder(BorderFactory.createEmptyBorder(4, 0, 0, 0));
-		JButton begin = button("Start", () -> start.accept(selection));
+		JButton begin = button(snapshot == null ? "Start" : "Start new session", () -> start.accept(selection));
 		begin.setEnabled(loggedIn);
-		actions.add(begin);
-		actions.add(button("Cancel", () -> { picking = false; rebuild(); }));
+		actions.add(begin, BorderLayout.CENTER);
+		actions.add(button("Cancel", () -> { picking = false; rebuild(); }), BorderLayout.EAST);
 		content.add(actions);
 	}
 
