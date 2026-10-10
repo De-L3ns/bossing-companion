@@ -8,3 +8,8 @@ nbactions.xml
 nb-configuration.xml
 nbproject/
 *.class
+
+# Local spec-driven development workspace and generated Codex skills
+/.specify/
+/specs/
+/.agents/skills/speckit-*/

@@ -11,6 +11,15 @@
 - Never commit without providing information
 - Keep the documentation in line, update the mockup(s) if applicable to the feature request
 
+## Spec-driven development
+
+- Before feature work, read `.specify/memory/constitution.md`, `specs/README.md`, `specs/architecture/overview.md`, relevant decision records, and the feature's specification, plan, tasks, and mockups.
+- Follow specification → clarification → technical plan → tasks → implementation → verification. Keep the requirements, architecture, decisions, mockups, and verification evidence aligned as work changes.
+- Record confirmed requirements separately from proposed defaults and unresolved decisions. A request to review a proposal is not approval to implement its runtime behavior. Existing explicit authorization applies; do not invent extra approval gates.
+- Link implementation tasks and verification scenarios to requirement IDs. Build success and mockup checks do not constitute in-game acceptance; keep features awaiting user verification until confirmed.
+- Keep planning artifacts inside the Git-ignored `.specify/` and `specs/` workspaces. Never force-add them or publish their contents unless the user explicitly requests it.
+- If the local workspace is missing, restore or recreate it from available project context before feature implementation. Do not silently substitute guessed requirements or install shared tooling.
+
 ## Logging
 
 - Use `log.debug()` for developer/diagnostic logging.
